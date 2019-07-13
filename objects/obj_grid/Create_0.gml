@@ -28,5 +28,12 @@ for(var i = 0; i < 1;i++)
 	var enemy = instance_create_depth(xx + enemyX*tileSize + tileSize/2, yy + enemyY*tileSize + tileSize/2,0, obj_enemy)
 	enemy.posX = enemyX
 	enemy.posY = enemyY
+	
+	var dynamiteX = irandom(width-1)
+	var dynamiteY = irandom(height-1)
+	var dynamite = instance_create_depth(xx + dynamiteX*tileSize + tileSize/2, yy + dynamiteY*tileSize + tileSize/2,0, obj_dynamite)
+	dynamite.posX = dynamiteX
+	dynamite.posY = dynamiteY
+	
 }
 

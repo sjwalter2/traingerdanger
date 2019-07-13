@@ -4,4 +4,4 @@
 posX = -1
 posY = -1
 grid = 0
-alarm_set(0,1200)
+alarm_set(0,300)

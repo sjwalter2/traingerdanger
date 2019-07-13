@@ -19,4 +19,6 @@ if (selectedPlayer != noone && ds_map_find_value(grid[hoverX, hoverY], "inRange"
 	selectedPlayer.pathToTargetX =  ds_map_find_value(grid[hoverX,hoverY], "pathX")
 	selectedPlayer.pathToTargetY = ds_map_find_value(grid[hoverX,hoverY], "pathY")
 	selectedPlayer.myTurn = 1
+	clear_range()
+	
 }

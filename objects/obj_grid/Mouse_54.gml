@@ -11,6 +11,8 @@ with(obj_player)
 		carryingPlayer = id
 		item = carrying	
 	}
+	else if(selected)
+		selected = 0
 		
 }
 	

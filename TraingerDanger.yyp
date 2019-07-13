@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "78e0b420-8dde-4c44-80a0-64ad6330a7ae",
+            "Value": {
+                "id": "0b511d18-af79-43c3-89b5-b4cfeb335e16",
+                "resourcePath": "scripts\\draw_circular_bar\\draw_circular_bar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
             "Value": {
                 "id": "d38f2dd2-1f1b-435a-bae0-2ae7d261934d",
@@ -407,7 +415,8 @@
         "9474dbac-edb5-4556-9a29-a45e43de8d56",
         "d7ef308c-b77f-46dd-b432-9fa701be8a56",
         "3bfb513d-c3c1-48bf-b032-d48059aea0bd",
-        "ca7d7c6f-d267-4fce-b1f4-8b0ca8dc75d3"
+        "ca7d7c6f-d267-4fce-b1f4-8b0ca8dc75d3",
+        "78e0b420-8dde-4c44-80a0-64ad6330a7ae"
     ],
     "tutorial": ""
 }

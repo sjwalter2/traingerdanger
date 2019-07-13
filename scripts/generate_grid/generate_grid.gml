@@ -81,6 +81,8 @@ for(var k = 0; k < iters; k++)
 		}
         chance+=1		
 }
+
+//spawn ore
 for (var i = 0; i < w; i++)
 		{
             for (var j = 0; j < h; j++)
@@ -88,9 +90,9 @@ for (var i = 0; i < w; i++)
 				ds_map_add(grid[i,j], "borderArray", get_bordering(i,j,grid))
 				if (ds_map_find_value(grid[i,j], "mountain") && irandom(10) = 0)
 					if(irandom(5) = 0)
-						ds_map_replace(grid[i,j],"ore", 1)
+						ds_map_replace(grid[i,j],"ore", 1) //gems
 					else
-						ds_map_replace(grid[i,j],"ore", 2)
+						ds_map_replace(grid[i,j],"ore", 2) //iron
 			}
 		}
 return grid

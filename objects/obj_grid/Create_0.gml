@@ -1,11 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomize()
-width = 50
-height = 28
+width = 40
+height = 20
 tileSize = 32
-xx = 0
-yy = 0
+boardWidth = width*tileSize
+boardHeight = height*tileSize
+xx = (room_width - boardWidth)/2
+yy = (room_height - boardHeight)/2
 border = 0
 actions = 15
 hoverX = -1
@@ -17,19 +19,14 @@ for(var i = 0; i < 1;i++)
 {
 	var playerX = irandom(width-1)
 	var playerY = irandom(height-1)
-	var player = instance_create_depth(playerX*tileSize + tileSize/2, playerY*tileSize + tileSize/2,0, obj_player)
+	var player = instance_create_depth(xx + playerX*tileSize + tileSize/2, yy + playerY*tileSize + tileSize/2,0, obj_player)
 	player.posX = playerX
 	player.posY = playerY
 
 	var enemyX = irandom(width-1)
 	var enemyY = irandom(height-1)
-	var enemy = instance_create_depth(enemyX*tileSize + tileSize/2, enemyY*tileSize + tileSize/2,0, obj_enemy)
+	var enemy = instance_create_depth(xx + enemyX*tileSize + tileSize/2, yy + enemyY*tileSize + tileSize/2,0, obj_enemy)
 	enemy.posX = enemyX
 	enemy.posY = enemyY
 }
 
-	var enemyX = irandom(width-1)
-	var enemyY = irandom(height-1)
-	var enemy = instance_create_depth(enemyX*tileSize + tileSize/2, enemyY*tileSize + tileSize/2,0, obj_enemy)
-	enemy.posX = enemyX
-	enemy.posY = enemyY

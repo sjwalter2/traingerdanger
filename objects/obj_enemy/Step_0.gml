@@ -9,8 +9,6 @@ if(myTurn && !targetSelected && instance_exists(obj_player))
 {
 	var targetX = -1
 	var targetY = -1	
-	var myX = posX
-	var myY = posY
 	var inRangeX = []
 	var inRangeY = []
 	var moveToX = -1

@@ -4,7 +4,7 @@
 //Draw grid
 for(var i = 0; i < width; i++)
 	for(var j = 0; j < height; j++)
-		draw_space(xx,yy,i,j,tileSize,border, actions, grid[i,j], grid)
+		draw_space(xx,yy,i,j,tileSize, grid[i,j])
 
 
 for(var i = 0; i < width; i++)

@@ -18,7 +18,8 @@ if(selected)
 		if (!conflict && selectedPlayer != noone && 
 			(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
 			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
-			ds_map_find_value(grid[hoverX, hoverY], "inRange") == 1)
+			ds_map_find_value(grid[hoverX, hoverY], "inRange") == 1 &&
+			ds_map_find_value(grid[hoverX, hoverY], "occupied") == 0)
 		{
 
 			selectedPlayer.targetSelected = 1

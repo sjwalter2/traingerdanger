@@ -47,7 +47,7 @@ for(var i = 0; i < 25;i++)
 {
 	var playerX = irandom(leftMostMountain-1)
 	var playerY = irandom(height-1)
-	var player = instance_create_depth(xx + playerX*tileSize + tileSize/2, yy + playerY*tileSize + tileSize/2,0, obj_player)
+	var player = instance_create_depth(get_x_from_pos(playerX), get_y_from_pos(playerY),0, obj_player)
 	player.posX = playerX
 	player.posY = playerY
 

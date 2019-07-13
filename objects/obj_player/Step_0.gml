@@ -4,8 +4,8 @@
 
 if injured {
 	with(obj_grid){
-		other.x = xx + other.posX*tileSize + tileSize/2
-		other.y = yy + other.posY*tileSize + tileSize/2
+		other.x = get_x_from_pos(other.posX)
+		other.y = get_y_from_pos(other.posY)
 		var injuredplayer = instance_create_depth(other.x, other.y,0, obj_injuredplayer)
 		injuredplayer.posX = other.posX
 		injuredplayer.posY = other.posY

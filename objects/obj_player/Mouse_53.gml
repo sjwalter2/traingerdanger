@@ -11,13 +11,12 @@ if(selected)
 				selectedPlayer = id
 			if(goalX = other.hoverX && goalY = other.hoverY)
 				conflict = 1
-			if(posX = other.hoverX && posY = other.hoverY)
-				conflict = 1
+
 		}
 	
 		var mx = mouse_x
 		var my = mouse_y
-		if (!conflict && selectedPlayer != noone && 
+		if (selectedPlayer != noone && 
 			(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
 			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
 			ds_map_find_value(grid[hoverX, hoverY], "inRange") == 1 &&

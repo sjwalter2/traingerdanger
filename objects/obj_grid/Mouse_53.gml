@@ -10,7 +10,7 @@ with(obj_player)
 }
 	
 
-if (selectedPlayer != noone && ds_map_find_value(grid[hoverX, hoverY], "inRange") == 1)
+if (selectedPlayer != noone && ds_map_find_value(grid[hoverX, hoverY], "inRange") != 0)
 {
 
 	selectedPlayer.targetSelected = 1

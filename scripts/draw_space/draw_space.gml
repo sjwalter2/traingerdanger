@@ -52,9 +52,12 @@ if(mountain)
 	}
 	
 }
-if(inRange)
+if(inRange != 0)
 {
-	draw_set_color(c_blue)
+	if(inRange = 1)
+		draw_set_color(c_blue)
+	if(inRange = 2)
+		draw_set_color(c_yellow)
 	draw_set_alpha(.2)
 	draw_rectangle(leftX, upY, rightX, downY, 0)
 	draw_rectangle(leftX, upY, rightX, downY, 1)

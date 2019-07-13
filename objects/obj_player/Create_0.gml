@@ -15,3 +15,4 @@ moveSpeed = 2
 pointReached = 1
 myTurn = 0
 injured = 0
+pickingUp = 0

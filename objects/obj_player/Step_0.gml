@@ -54,8 +54,9 @@ if(myTurn  && !pointReached)
 				carrying.y = startY + carrying.posY*size + size/2
 				carrying = noone
 				placeOnReach = -1
-				
 			}
+			pickingUp = 1
+			alarm_set(1,5)
 		}
 	}
 }

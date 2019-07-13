@@ -2,6 +2,10 @@
 // You can write your code in this editor
 
 
+if injured {
+	
+}
+
 if(myTurn  && pointReached)
 {
 	var startX = 0
@@ -60,9 +64,3 @@ if(myTurn  && !pointReached)
 		}
 	}
 }
-if injured {
-	image_blend = c_red
-} else {
-	image_blend = c_white
-}
-

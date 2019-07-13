@@ -23,19 +23,28 @@ if(posY == 0)
 
 with grid{
 	if (U == 1){
-		instance_create_depth(xx + other.posX*tileSize + tileSize/2, yy + (other.posY-1)*tileSize + tileSize/2,0, obj_explosion)
+		var expl = instance_create_depth(xx + other.posX*tileSize + tileSize/2, yy + (other.posY-1)*tileSize + tileSize/2,-1, obj_explosion)
+		expl.posX = other.posX;
+		expl.posY = other.posY-1;
 	}
 	if (D == 1){
-		instance_create_depth(xx + other.posX*tileSize + tileSize/2, yy + (other.posY+1)*tileSize + tileSize/2,0, obj_explosion)		
+		var expl = instance_create_depth(xx + other.posX*tileSize + tileSize/2, yy + (other.posY+1)*tileSize + tileSize/2,-1, obj_explosion)		
+		expl.posX = other.posX;
+		expl.posY = other.posY+1;
 	}
 	if (L == 1){
-		instance_create_depth(xx + (other.posX - 1) *tileSize + tileSize/2, yy + other.posY*tileSize + tileSize/2,0, obj_explosion)		
+		var expl = instance_create_depth(xx + (other.posX - 1) *tileSize + tileSize/2, yy + other.posY*tileSize + tileSize/2,-1, obj_explosion)		
+		expl.posX = other.posX-1;
+		expl.posY = other.posY;
 	}
 	if (R == 1){
-		instance_create_depth(xx + (other.posX + 1) *tileSize + tileSize/2, yy + other.posY*tileSize + tileSize/2,0, obj_explosion)		
+		var expl = instance_create_depth(xx + (other.posX + 1) *tileSize + tileSize/2, yy + other.posY*tileSize + tileSize/2,-1, obj_explosion)		
+		expl.posX = other.posX+1;
+		expl.posY = other.posY;
 	}
-	instance_create_depth(xx + other.posX *tileSize + tileSize/2, yy + other.posY*tileSize + tileSize/2,0, obj_explosion)		
-	
+	var expl = instance_create_depth(xx + other.posX *tileSize + tileSize/2, yy + other.posY*tileSize + tileSize/2,-1, obj_explosion)		
+	expl.posX = other.posX;
+	expl.posY = other.posY;
 }
 
 instance_destroy();

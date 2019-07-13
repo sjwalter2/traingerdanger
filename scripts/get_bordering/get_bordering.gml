@@ -1,3 +1,5 @@
+//get_bordering(posX,posY,grid)
+//Called by generate_grid
 var i = argument0
 var j = argument1
 var grid = argument2

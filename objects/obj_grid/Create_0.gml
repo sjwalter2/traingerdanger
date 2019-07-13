@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 randomize()
-width = 40
-height = 20
+width = 44
+height = 22
 tileSize = 32
 boardWidth = width*tileSize
 boardHeight = height*tileSize

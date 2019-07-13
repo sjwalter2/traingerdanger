@@ -3,19 +3,22 @@
 
 //Move Player
 var selectedPlayer = noone
+var conflict = 0
 with(obj_player)
 {
 	if(selected)
 		selectedPlayer = id
+	if(goalX = other.hoverX && goalY = other.hoverY)
+		conflict = 1
 }
 	
 
-if (selectedPlayer != noone && ds_map_find_value(grid[hoverX, hoverY], "inRange") != 0)
+if (!conflict && selectedPlayer != noone && ds_map_find_value(grid[hoverX, hoverY], "inRange") != 0)
 {
 
 	selectedPlayer.targetSelected = 1
-	selectedPlayer.posX = hoverX
-	selectedPlayer.posY = hoverY
+	selectedPlayer.goalX = hoverX
+	selectedPlayer.goalY = hoverY
 	selectedPlayer.pathToTargetX =  ds_map_find_value(grid[hoverX,hoverY], "pathX")
 	selectedPlayer.pathToTargetY = ds_map_find_value(grid[hoverX,hoverY], "pathY")
 	selectedPlayer.myTurn = 1

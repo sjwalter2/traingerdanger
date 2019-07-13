@@ -42,7 +42,7 @@ for (var i = 0; i < width; i++)
 	if(leftMostMountain != width)
 		break;
 }
-for(var i = 0; i < 1;i++)
+for(var i = 0; i < 2;i++)
 {
 	var playerX = irandom(leftMostMountain-1)
 	var playerY = irandom(height-1)

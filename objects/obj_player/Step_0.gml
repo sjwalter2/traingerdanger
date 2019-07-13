@@ -15,6 +15,7 @@ if(myTurn  && pointReached)
 	}
 	currentTargetX = startX + pathToTargetX[pathCount]*size + size/2
 	currentTargetY = startY + pathToTargetY[pathCount]*size + size/2
+	
 	move_towards_point(currentTargetX,currentTargetY,moveSpeed)
 	pointReached = 0
 
@@ -24,9 +25,15 @@ if(myTurn  && !pointReached)
 	if(point_distance(x,y,currentTargetX,currentTargetY) <= moveSpeed)
 	{
 		pointReached = 1
+		posX = pathToTargetX[pathCount]
+		posY = pathToTargetY[pathCount]
 		pathCount++	
+		
+		
 		if(pathCount >= array_length_1d(pathToTargetX))
 		{
+			goalX = -1
+			goalY = -1
 			myTurn = 0
 			pathCount = 1
 			targetSelected = 0

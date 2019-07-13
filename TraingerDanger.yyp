@@ -455,6 +455,22 @@
             }
         },
         {
+            "Key": "b3b80253-9b2e-4fae-bb1c-ab240524c2b2",
+            "Value": {
+                "id": "95fbaa94-c34b-43cd-bf49-f3e3a279fef9",
+                "resourcePath": "sprites\\spr_new_turn_button\\spr_new_turn_button.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c32ddbd2-568e-42a1-9f54-f25238080d83",
+            "Value": {
+                "id": "955a7eb0-b629-4597-ab4b-baf84eecc701",
+                "resourcePath": "objects\\obj_new_turn_button\\obj_new_turn_button.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c3d13184-f366-4c67-bef2-9d56f110f4bb",
             "Value": {
                 "id": "3671302a-2787-4183-afd8-50a9e3f83e24",

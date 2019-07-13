@@ -5,7 +5,7 @@ var down = 0
 
 var posX = argument0
 var posY = argument1
-var grid = argument2
+var grid = argument2 
 var useDiag = argument3
 var pathCost = -1
 var currentTile = -1

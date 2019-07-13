@@ -18,11 +18,13 @@ if(selected)
 				selectedPlayer = id
 			if(goalX = other.hoverX && goalY = other.hoverY)
 				conflict = 1
+			if(posX = other.hoverX && posY = other.hoverY)
+				conflict = 1
 		}
 	
 		var mx = mouse_x
 		var my = mouse_y
-		if (carryingPlayer != noone && 
+		if (!conflict && carryingPlayer != noone && 
 			(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
 			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
 			ds_map_find_value(grid[hoverX,hoverY],"inRange") != 0)
@@ -38,7 +40,7 @@ if(selected)
 			carryingPlayer.myTurn = 1
 			clear_range()
 		}
-		else if(selectedPlayer != noone && 
+		else if(!conflict && selectedPlayer != noone && 
 			(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
 			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
 			ds_map_find_value(grid[hoverX,hoverY],"inRange") = 1)
@@ -52,7 +54,7 @@ if(selected)
 			selectedPlayer.myTurn = 1
 			clear_range()
 		}
-		else if(selectedPlayer != noone && 
+		else if(!conflict && selectedPlayer != noone && 
 			(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
 			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
 			ds_map_find_value(grid[hoverX,hoverY],"inRange") = 3)
@@ -68,7 +70,7 @@ if(selected)
 			selectedPlayer.myTurn = 1
 			clear_range()
 		}
-		else
+		else if (!conflict || ds_map_find_value(grid[hoverX,hoverY],"inRange") == 0)
 			clear_range()	
 	}
 	

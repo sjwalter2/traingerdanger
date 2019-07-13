@@ -262,4 +262,5 @@ if(placed && !set)
 		}
 	}
 	set = 1
+	depth = 5
 }

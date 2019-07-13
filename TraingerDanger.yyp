@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0b0cdb48-bc39-4e91-a919-bc87394fc000",
+            "Value": {
+                "id": "ece03153-e824-4c0a-8852-79bcfe9d11ed",
+                "resourcePath": "objects\\obj_carryable\\obj_carryable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1625c066-d0f2-4b49-843e-14a3ba7c4979",
             "Value": {
                 "id": "0a2d011f-bbf4-4d74-a2c3-4f4785f6854a",

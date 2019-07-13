@@ -21,6 +21,8 @@ for(var i = 0; i < w; i++)
 		ds_map_add(space_map, "pathCost", -1)
 		ds_map_add(space_map, "pathX", [])
 		ds_map_add(space_map, "pathY", [])
+		ds_map_add(space_map, "posX", i)
+		ds_map_add(space_map, "posY", j)
 		grid[i,j] = space_map
 	}
 }

@@ -58,7 +58,6 @@ for(var rotate = 0; rotate <= 3; rotate++)
 			{
 				ds_map_replace(tile, "inRange", 1)
 				ds_map_replace(tile, "pathCost",  actions - i)
-				
 				pathX[array_length_1d(pathX)] = xx + checkX
 				pathY[array_length_1d(pathY)] = yy + checkY
 				ds_map_replace(tile, "pathX",  pathX)

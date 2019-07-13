@@ -12,8 +12,12 @@ with(obj_player)
 		conflict = 1
 }
 	
-
-if (!conflict && selectedPlayer != noone && ds_map_find_value(grid[hoverX, hoverY], "inRange") != 0)
+var mx = mouse_x
+var my = mouse_y
+if (!conflict && selectedPlayer != noone && 
+	(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
+	my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
+	ds_map_find_value(grid[hoverX, hoverY], "inRange") != 0)
 {
 
 	selectedPlayer.targetSelected = 1
@@ -26,3 +30,7 @@ if (!conflict && selectedPlayer != noone && ds_map_find_value(grid[hoverX, hover
 	clear_range()
 	
 }
+else if(!(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
+	my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) ||
+	ds_map_find_value(grid[hoverX, hoverY], "inRange") = 0)
+	clear_range()

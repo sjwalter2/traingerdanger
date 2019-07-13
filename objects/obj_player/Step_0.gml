@@ -40,6 +40,22 @@ if(myTurn  && !pointReached)
 			x = currentTargetX
 			y = currentTargetY 
 			speed = 0
+			if(placeOnReach != -1 && carrying != noone)
+			{
+				with(obj_grid)
+				{
+					var startX = xx
+					var startY = yy
+					var size = tileSize
+				}
+				carrying.posX = ds_map_find_value(placeOnReach, "posX")
+				carrying.posY = ds_map_find_value(placeOnReach, "posY")
+				carrying.x = startX + carrying.posX*size + size/2
+				carrying.y = startY + carrying.posY*size + size/2
+				carrying = noone
+				placeOnReach = -1
+				
+			}
 		}
 	}
 }
@@ -48,3 +64,4 @@ if injured {
 } else {
 	image_blend = c_white
 }
+

@@ -3,7 +3,6 @@
 var actions = argument0
 var xx = argument1
 var yy = argument2
-
 clear_range()
 
 var newPathX = []

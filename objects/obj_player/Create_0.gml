@@ -4,6 +4,7 @@ posX = -1
 posY = -1
 goalX = -1
 goalY = -1
+placeOnReach = -1
 actions = 10
 selected = 0
 carrying = noone

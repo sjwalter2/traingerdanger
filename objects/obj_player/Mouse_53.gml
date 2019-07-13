@@ -11,6 +11,8 @@ if(selected)
 				selectedPlayer = id
 			if(goalX = other.hoverX && goalY = other.hoverY)
 				conflict = 1
+			if(posX = other.hoverX && posY = other.hoverY)
+				conflict = 1
 		}
 	
 		var mx = mouse_x

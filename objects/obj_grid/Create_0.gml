@@ -76,3 +76,7 @@ for(var i = 0; i < 5;i++)
 	var dyanmitebldg = instance_create_depth(get_x_from_pos(0), get_y_from_pos(2),1,obj_dynamite_building)
 	dyanmitebldg.posX = 0
 	dyanmitebldg.posY = 2
+	
+	var railbldg = instance_create_depth(get_x_from_pos(0), get_y_from_pos(4),1,obj_rail_building)
+	railbldg.posX = 0
+	railbldg.posY = 4

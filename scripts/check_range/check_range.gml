@@ -43,7 +43,13 @@ for(var rotate = 0; rotate <= 3; rotate++)
 	}
 	while(i <= actions)
 	{
-		if(xx + checkX < array_height_2d(grid) && xx + checkX >= 0 && yy + checkY < array_length_2d(grid, 0) && yy + checkY >= 0)
+		var conflict = 0
+		with(obj_player)
+		{
+			if(xx + checkX == posX && yy + checkY == posY)	
+				conflict = 1
+		}
+		if(!conflict && xx + checkX < array_height_2d(grid) && xx + checkX >= 0 && yy + checkY < array_length_2d(grid, 0) && yy + checkY >= 0)
 		{
 			tile = grid[xx + checkX, yy + checkY]
 			tileCost = ds_map_find_value(tile, "cost")

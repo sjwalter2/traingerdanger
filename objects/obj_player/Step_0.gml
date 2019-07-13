@@ -67,6 +67,31 @@ if(myTurn  && !pointReached)
 				carrying = noone
 				placeOnReach = -1
 			}
+			if(mineOnReach != -1)
+			{
+				
+				if(ds_map_find_value(mineOnReach, "mountain") = 1)
+				{
+					var mineX = ds_map_find_value(mineOnReach, "posX")
+					var mineY = ds_map_find_value(mineOnReach, "posY")
+					with(obj_grid)	
+					{
+						ds_map_set(grid[mineX, mineY],"mountain",0)
+						ds_map_set(grid[mineX, mineY],"ore",0)
+						ds_map_set(grid[mineX, mineY],"cost",1)
+						for (var i = 0; i < width; i++)
+						{
+				            for (var j = 0; j < height; j++)
+							{
+								ds_map_replace(grid[i,j], "borderArray", get_bordering(i,j,grid))
+							}
+						}
+				
+					}
+				}
+				mineOnReach = -1
+			}
+			
 			pickingUp = 1
 			alarm_set(1,5)
 		}

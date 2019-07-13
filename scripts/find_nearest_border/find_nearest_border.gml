@@ -6,6 +6,7 @@ var down = 0
 var posX = argument0
 var posY = argument1
 var grid = argument2
+var useDiag = argument3
 var pathCost = -1
 var currentTile = -1
 
@@ -36,22 +37,22 @@ if(down && ds_map_find_value(grid[posX, posY + 1], "inRange") != 0 && ds_map_fin
 	pathCost = ds_map_find_value(grid[posX, posY + 1], "pathCost") 
 }
 		
-if(left && up && ds_map_find_value(grid[posX - 1, posY - 1], "inRange") != 0 && ds_map_find_value(grid[posX - 1, posY - 1], "pathCost") > pathCost)
+if(useDiag && left && up && ds_map_find_value(grid[posX - 1, posY - 1], "inRange") != 0 && ds_map_find_value(grid[posX - 1, posY - 1], "pathCost") > pathCost)
 {
 	currentTile = grid[posX - 1, posY - 1]
 	pathCost = ds_map_find_value(grid[posX - 1, posY - 1], "pathCost")
 }
-if(right && up && ds_map_find_value(grid[posX + 1, posY - 1], "inRange") != 0 && ds_map_find_value(grid[posX + 1, posY - 1], "pathCost") > pathCost)
+if(useDiag && right && up && ds_map_find_value(grid[posX + 1, posY - 1], "inRange") != 0 && ds_map_find_value(grid[posX + 1, posY - 1], "pathCost") > pathCost)
 {
 	currentTile = grid[posX + 1, posY - 1]
 	pathCost = ds_map_find_value(grid[posX + 1, posY - 1], "pathCost")
 }
-if(left && down && ds_map_find_value(grid[posX - 1, posY + 1], "inRange") != 0 && ds_map_find_value(grid[posX - 1, posY + 1], "pathCost") > pathCost)
+if(useDiag && left && down && ds_map_find_value(grid[posX - 1, posY + 1], "inRange") != 0 && ds_map_find_value(grid[posX - 1, posY + 1], "pathCost") > pathCost)
 {
 	currentTile = grid[posX - 1, posY + 1]
 	pathCost = ds_map_find_value(grid[posX - 1, posY + 1], "pathCost")
 }
-if(right && down && ds_map_find_value(grid[posX + 1, posY + 1], "inRange") != 0 && ds_map_find_value(grid[posX + 1, posY + 1], "pathCost") > pathCost)
+if(useDiag && right && down && ds_map_find_value(grid[posX + 1, posY + 1], "inRange") != 0 && ds_map_find_value(grid[posX + 1, posY + 1], "pathCost") > pathCost)
 {
 	currentTile = grid[posX + 1, posY + 1]
 	pathCost = ds_map_find_value(grid[posX + 1, posY + 1], "pathCost")

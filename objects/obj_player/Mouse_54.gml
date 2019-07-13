@@ -27,7 +27,7 @@ if(selected)
 			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
 			ds_map_find_value(grid[hoverX,hoverY],"inRange") != 0)
 		{
-			var target = find_nearest_border(hoverX,hoverY,grid)
+			var target = find_nearest_border(hoverX,hoverY,grid, 1)
 			carryingPlayer.placeOnReach = grid[hoverX,hoverY]
 			carryingPlayer.targetSelected = 1
 			carryingPlayer.goalX = ds_map_find_value(target, "posX")
@@ -49,6 +49,22 @@ if(selected)
 			selectedPlayer.pathCount = 0
 			selectedPlayer.pathToTargetX =  ds_map_find_value(grid[hoverX,hoverY], "pathX")
 			selectedPlayer.pathToTargetY = ds_map_find_value(grid[hoverX,hoverY], "pathY")
+			selectedPlayer.myTurn = 1
+			clear_range()
+		}
+		else if(selectedPlayer != noone && 
+			(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
+			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
+			ds_map_find_value(grid[hoverX,hoverY],"inRange") = 3)
+		{
+			var target = find_nearest_border(hoverX,hoverY,grid, 0)
+			selectedPlayer.mineOnReach = grid[hoverX,hoverY]
+			selectedPlayer.targetSelected = 1
+			selectedPlayer.goalX = ds_map_find_value(target, "posX")
+			selectedPlayer.goalY = ds_map_find_value(target, "posY")
+			selectedPlayer.pathCount = 0
+			selectedPlayer.pathToTargetX =  ds_map_find_value(target, "pathX")
+			selectedPlayer.pathToTargetY = ds_map_find_value(target, "pathY")
 			selectedPlayer.myTurn = 1
 			clear_range()
 		}

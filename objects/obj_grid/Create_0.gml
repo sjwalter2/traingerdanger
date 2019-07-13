@@ -70,6 +70,10 @@ for(var i = 0; i < 25;i++)
 	
 }
 
-	var hospital = instance_create_depth(xx + tileSize/2, yy + tileSize/2,1, obj_hospital)
+	var hospital = instance_create_depth(get_x_from_pos(0), get_y_from_pos(0),1, obj_hospital)
 	hospital.posX = 0
 	hospital.posY = 0
+	
+	var dyanmitebldg = instance_create_depth(get_x_from_pos(0), get_y_from_pos(2),1,obj_dynamite_building)
+	dyanmitebldg.posX = 0
+	dyanmitebldg.posY = 2

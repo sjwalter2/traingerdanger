@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(pickingUp)
+if(pickingUp && !other.set)
 {
 var carried = 0
 var item = other.id

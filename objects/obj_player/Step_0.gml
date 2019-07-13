@@ -62,6 +62,7 @@ if(myTurn  && !pointReached)
 				}
 				carrying.posX = ds_map_find_value(placeOnReach, "posX")
 				carrying.posY = ds_map_find_value(placeOnReach, "posY")
+				carrying.placed = 1
 				carrying.x = startX + carrying.posX*size + size/2
 				carrying.y = startY + carrying.posY*size + size/2
 				carrying = noone

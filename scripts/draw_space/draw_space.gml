@@ -54,11 +54,14 @@ if(mountain)
 }
 if(inRange != 0)
 {
+	draw_set_alpha(.4)
 	if(inRange = 1)
 		draw_set_color(c_blue)
 	if(inRange = 2)
 		draw_set_color(c_fuchsia)
-	draw_set_alpha(.2)
+	if(inRange = 3)
+		draw_set_color(make_color_hsv(20,255,255))
+	
 	draw_rectangle(leftX + 1, upY + 1, rightX - 1, downY - 1, 0)
 	//draw_rectangle(leftX + 1, upY + 1, rightX - 1, downY - 1, 1)
 	draw_set_alpha(1)

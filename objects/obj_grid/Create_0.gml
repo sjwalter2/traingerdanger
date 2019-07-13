@@ -12,7 +12,8 @@ pathX
 pathY
 mountain
 borderArray
-
+posX
+posY
 */
 
 randomize()

@@ -6,3 +6,4 @@ posY = -1
 grid = 0
 alarm_max = 4000
 alarm_set(0,alarm_max)
+event_inherited()

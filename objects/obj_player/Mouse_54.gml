@@ -19,7 +19,16 @@ if(selected)
 			if(goalX = other.hoverX && goalY = other.hoverY)
 				conflict = 1
 		}
-	
+		with(obj_carryable)
+		{
+			if(posX = other.hoverX && posY = other.hoverY && carryingPlayer != noone)	
+				conflict = 1
+		}
+		with(obj_building)
+		{
+			if(posX = other.hoverX && posY = other.hoverY && carryingPlayer != noone)	
+				conflict = 1
+		}
 		var mx = mouse_x
 		var my = mouse_y
 		if (!conflict && carryingPlayer != noone && 

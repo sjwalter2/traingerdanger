@@ -5,3 +5,4 @@ posX = -1
 posY = -1
 beinghealed = 0;
 alarm_max = 120
+event_inherited()

@@ -70,3 +70,6 @@ for(var i = 0; i < 25;i++)
 	
 }
 
+	var hospital = instance_create_depth(xx + tileSize + tileSize/2, yy + tileSize + tileSize/2,1, obj_hospital)
+	hospital.posX = 0
+	hospital.posY = 0

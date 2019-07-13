@@ -1,7 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_blend = c_red
-posX = -1
-posY = -1
-beinghealed = 0;
-alarm_max = 120
+with(obj_grid){
+	ds_map_set(grid[other.posX,other.posY],"occupied",1);
+}

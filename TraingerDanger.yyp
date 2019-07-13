@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "14c7984f-cbb7-4eb1-b781-abcdeb88fad7",
+            "Value": {
+                "id": "335b155f-5b6b-4051-950e-c4d8ab05f194",
+                "resourcePath": "sprites\\spr_player_building\\spr_player_building.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "14fa6840-cd84-4c5b-8882-be9c02b1c62f",
             "Value": {
                 "id": "48d13fa8-2d95-4a94-a8de-929a451e0885",
@@ -199,6 +207,14 @@
             }
         },
         {
+            "Key": "41a68162-40fa-4161-a5b7-32936d417c9a",
+            "Value": {
+                "id": "c84ceb9f-7607-476d-9153-89587d6e6a8c",
+                "resourcePath": "objects\\obj_gui\\obj_gui.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4338c3cb-8264-42b0-b873-637cde94be56",
             "Value": {
                 "id": "f2406f1e-0c5e-4c07-9c61-bead2c117975",
@@ -252,6 +268,14 @@
                 "id": "2cfb6dfe-0ac1-493b-8c8f-558282241803",
                 "resourcePath": "views\\5c1c1753-d301-4408-af21-c0427914221a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "616a8c97-2f5d-4a69-8d92-e8bc9ab7089b",
+            "Value": {
+                "id": "b279b685-a6f8-4992-8312-3b248266674b",
+                "resourcePath": "sprites\\spr_storage_building\\spr_storage_building.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -324,6 +348,14 @@
                 "id": "9b2ad121-c79b-4525-b5c5-5911849866af",
                 "resourcePath": "views\\883ee9e9-14c6-4100-b985-270938ff2807.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "899d5340-6405-4d94-8ac3-b6be76184dc8",
+            "Value": {
+                "id": "3fbdd4bd-de26-4f2a-a4b1-cadf4b6cbced",
+                "resourcePath": "objects\\obj_storage_building\\obj_storage_building.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -484,6 +516,14 @@
                 "id": "9d21b061-5564-4973-a60a-5539bd361bd8",
                 "resourcePath": "scripts\\clear_range\\clear_range.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "da3c20f7-8f9f-4200-b517-085ad0c255b7",
+            "Value": {
+                "id": "136a4fde-ed2b-4d3b-b629-19b8a3cbce93",
+                "resourcePath": "objects\\obj_player_building\\obj_player_building.yy",
+                "resourceType": "GMObject"
             }
         },
         {

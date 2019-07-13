@@ -74,6 +74,14 @@ if(myTurn  && !pointReached)
 				{
 					var mineX = ds_map_find_value(mineOnReach, "posX")
 					var mineY = ds_map_find_value(mineOnReach, "posY")
+					if(ds_map_find_value(mineOnReach, "ore") = 1)
+					{
+						instance_create_depth(get_x_from_pos(mineX), get_y_from_pos(mineY),-10,obj_gem)
+					}
+					if(ds_map_find_value(mineOnReach, "ore") = 2)
+					{
+						instance_create_depth(get_x_from_pos(mineX), get_y_from_pos(mineY),-10,obj_iron)
+					}
 					with(obj_grid)	
 					{
 						ds_map_set(grid[mineX, mineY],"mountain",0)

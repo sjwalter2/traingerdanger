@@ -100,6 +100,25 @@ if(myTurn  && !pointReached)
 				mineOnReach = -1
 			}
 			
+			if(purchaseOnReach != -1)
+			{
+				var myX = get_x_from_pos(ds_map_find_value(purchaseOnReach, "posX"))
+				var myY = get_y_from_pos(ds_map_find_value(purchaseOnReach, "posY"))
+				if(instance_position(myX,myY,obj_player_building))
+				{
+					var playerbldg = instance_position(myX,myY,obj_player_building)
+					with playerbldg{
+						if global.Gems >= playerCost{
+							alarm_set(1,player_spawn_rate)
+							global.Gems = global.Gems - playerCost
+						} else {
+							show_debug_message("Not enough gems!")
+						}
+					}
+				}
+				purchaseOnReach = -1
+			}
+			
 			pickingUp = 1
 			alarm_set(1,5)
 		}

@@ -85,5 +85,9 @@ for(var i = 0; i < 5;i++)
 	storagebldg.posX = 0
 	storagebldg.posY = 6
 	
+	var playerbldg = instance_create_depth(get_x_from_pos(0),get_y_from_pos(8),1,obj_player_building)
+	playerbldg.posX = 0
+	playerbldg.posY = 8
+	
 global.Iron = 0;
 global.Gems = 0;

@@ -17,3 +17,4 @@ myTurn = 0
 injured = 0
 pickingUp = 0
 mineOnReach = -1
+purchaseOnReach = -1

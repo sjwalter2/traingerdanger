@@ -69,6 +69,22 @@ if(selected)
 			selectedPlayer.myTurn = 1
 			clear_range()
 		}
+		else if(!conflict && selectedPlayer != noone && 
+			(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
+			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
+			ds_map_find_value(grid[hoverX,hoverY],"inRange") = 1 &&
+			instance_position(mx,my,obj_player_building)) {
+			var target = find_nearest_border(hoverX,hoverY,grid, 0)
+			selectedPlayer.purchaseOnReach = grid[hoverX,hoverY]
+			selectedPlayer.targetSelected = 1
+			selectedPlayer.goalX = ds_map_find_value(target, "posX")
+			selectedPlayer.goalY = ds_map_find_value(target, "posY")
+			selectedPlayer.pathCount = 0
+			selectedPlayer.pathToTargetX =  ds_map_find_value(target, "pathX")
+			selectedPlayer.pathToTargetY = ds_map_find_value(target, "pathY")
+			selectedPlayer.myTurn = 1
+			clear_range()
+		}
 		else if (!conflict || ds_map_find_value(grid[hoverX,hoverY],"inRange") == 0)
 			clear_range()	
 	}

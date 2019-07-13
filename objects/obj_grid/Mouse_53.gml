@@ -19,6 +19,7 @@ if (!conflict && selectedPlayer != noone && ds_map_find_value(grid[hoverX, hover
 	selectedPlayer.targetSelected = 1
 	selectedPlayer.goalX = hoverX
 	selectedPlayer.goalY = hoverY
+	selectedPlayer.pathCount = 0
 	selectedPlayer.pathToTargetX =  ds_map_find_value(grid[hoverX,hoverY], "pathX")
 	selectedPlayer.pathToTargetY = ds_map_find_value(grid[hoverX,hoverY], "pathY")
 	selectedPlayer.myTurn = 1

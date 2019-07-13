@@ -1,5 +1,20 @@
 /// @description Insert description here
-// You can write your code in this editor
+
+/*ds_map_reference:
+
+cost => movement cost
+hover => hovered, yes / no
+ore => 0 is none, 1 is gems, 2 is iron
+occupied => am I occupied
+inRange
+pathCost
+pathX
+pathY
+mountain
+borderArray
+
+*/
+
 randomize()
 width = 44
 height = 22

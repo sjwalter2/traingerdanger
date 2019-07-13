@@ -80,3 +80,10 @@ for(var i = 0; i < 5;i++)
 	var railbldg = instance_create_depth(get_x_from_pos(0), get_y_from_pos(4),1,obj_rail_building)
 	railbldg.posX = 0
 	railbldg.posY = 4
+	
+	var storagebldg = instance_create_depth(get_x_from_pos(0),get_y_from_pos(6),1,obj_storage_building)
+	storagebldg.posX = 0
+	storagebldg.posY = 6
+	
+global.Iron = 0;
+global.Gems = 0;

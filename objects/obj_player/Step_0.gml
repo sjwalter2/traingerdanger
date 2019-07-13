@@ -36,3 +36,4 @@ if(myTurn  && !pointReached)
 		}
 	}
 }
+

@@ -8,28 +8,40 @@ boardWidth = width*tileSize
 boardHeight = height*tileSize
 xx = (room_width - boardWidth)/2
 yy = (room_height - boardHeight)/2
-border = 0
 actions = 15
 hoverX = -1
 hoverY = -1
 depth = 10
 grid = generate_grid(width, height)
-
+var leftMostMountain = width
+for (var i = 0; i < width; i++)
+{
+	for (var j = 0; j < height; j++)
+	{
+		if(ds_map_find_value(grid[i, j], "mountain") = 1)
+		{
+			leftMostMountain = i
+			break;
+		}
+	}
+	if(leftMostMountain != width)
+		break;
+}
 for(var i = 0; i < 1;i++)
 {
-	var playerX = irandom(width-1)
+	var playerX = irandom(leftMostMountain-1)
 	var playerY = irandom(height-1)
 	var player = instance_create_depth(xx + playerX*tileSize + tileSize/2, yy + playerY*tileSize + tileSize/2,0, obj_player)
 	player.posX = playerX
 	player.posY = playerY
 
-	var enemyX = irandom(width-1)
-	var enemyY = irandom(height-1)
-	var enemy = instance_create_depth(xx + enemyX*tileSize + tileSize/2, yy + enemyY*tileSize + tileSize/2,0, obj_enemy)
-	enemy.posX = enemyX
-	enemy.posY = enemyY
+	//var enemyX = irandom(width-1)
+	//var enemyY = irandom(height-1)
+	//var enemy = instance_create_depth(xx + enemyX*tileSize + tileSize/2, yy + enemyY*tileSize + tileSize/2,0, obj_enemy)
+	//enemy.posX = enemyX
+	//enemy.posY = enemyY
 	
-	var dynamiteX = irandom(width-1)
+	var dynamiteX = irandom(leftMostMountain-1)
 	var dynamiteY = irandom(height-1)
 	var dynamite = instance_create_depth(xx + dynamiteX*tileSize + tileSize/2, yy + dynamiteY*tileSize + tileSize/2,0, obj_dynamite)
 	dynamite.posX = dynamiteX

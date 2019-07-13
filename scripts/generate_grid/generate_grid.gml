@@ -13,10 +13,10 @@ for(var i = 0; i < w; i++)
 	{
 		var space_map = ds_map_create()
 
-		ds_map_add(space_map, "cost", irandom_range(1,2))
+		ds_map_add(space_map, "cost", irandom_range(1,3))
 		ds_map_add(space_map, "hover", 0)
 		ds_map_add(space_map, "ore", 0)
-		
+		ds_map_add(space_map, "occupied", 0)
 		ds_map_add(space_map, "inRange", 0)
 		ds_map_add(space_map, "pathCost", -1)
 		ds_map_add(space_map, "pathX", [])

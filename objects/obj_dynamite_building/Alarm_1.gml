@@ -5,4 +5,10 @@ with(obj_grid){
 	dynamite.posX = other.posX+1
 	dynamite.posY = other.posY
 }
+if place_meeting(dynamite.x,dynamite.y,obj_player){
+	with(instance_place(dynamite.x,dynamite.y,obj_player)){
+		pickingUp = 1;
+	}
+}
+
 alarm_set(1,dynamite_spawn_rate)

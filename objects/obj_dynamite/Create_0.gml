@@ -4,5 +4,5 @@ depth = -10
 posX = -1
 posY = -1
 grid = 0
-alarm_max = irandom_range(800, 1200)
+alarm_max = 4000
 alarm_set(0,alarm_max)

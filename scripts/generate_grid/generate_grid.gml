@@ -5,6 +5,8 @@ var h = argument1
 var grid = []
 var iters = 5
 var chance = 2
+var ironOdds = 10
+var gemOdds = 20
 for(var i = 0; i < w; i++)
 {
 	for(var j = 0; j < h; j++)
@@ -32,8 +34,11 @@ for (var j = 0; j < h; j++)
 	{
 		var mount = 0
 		if(i >= startPoint && i < startPoint + rowWidth)
+		{
 			mount = 1
+		}
 		ds_map_add(grid[i,j], "mountain", mount)
+		
 	}
 	if(i < w/2)
 	{
@@ -82,17 +87,21 @@ for(var k = 0; k < iters; k++)
         chance+=1		
 }
 
-//spawn ore
+//spawn ore and increase mountain cost
 for (var i = 0; i < w; i++)
 		{
             for (var j = 0; j < h; j++)
 			{
 				ds_map_add(grid[i,j], "borderArray", get_bordering(i,j,grid))
-				if (ds_map_find_value(grid[i,j], "mountain") && irandom(10) = 0)
-					if(irandom(5) = 0)
+				if (ds_map_find_value(grid[i,j], "mountain"))
+				{
+					ds_map_replace(grid[i,j], "cost", 100)	
+					if(irandom(gemOdds) = 0)
 						ds_map_replace(grid[i,j],"ore", 1) //gems
-					else
-						ds_map_replace(grid[i,j],"ore", 2) //iron
+					else if(irandom(ironOdds) = 0)
+						ds_map_replace(grid[i,j],"ore", 2) //iron		
+				}
+				
 			}
 		}
 return grid

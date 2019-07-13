@@ -1,19 +1,13 @@
-//draw_space(xx,yy,i,j,size,border, map)
+//draw_space(xx,yy,i,j,size,map)
 var xx = argument0
 var yy = argument1
 var i = argument2
 var j = argument3
 var size = argument4
-var border = argument5
-var acts = argument6
-var map = argument7
-var grid = argument8
+var map = argument5
+
 var cost = ds_map_find_value(map, "cost")
-var hover = ds_map_find_value(map, "hover")
 var inRange = ds_map_find_value(map, "inRange")
-var pathX = ds_map_find_value(map, "pathX")
-var pathY = ds_map_find_value(map, "pathY")
-var pathCost = ds_map_find_value(map, "pathCost")
 var mountain = ds_map_find_value(map, "mountain")
 var ore = ds_map_find_value(map, "ore")
 
@@ -62,7 +56,7 @@ if(inRange)
 {
 	draw_set_color(c_blue)
 	draw_set_alpha(.2)
-	draw_rectangle(leftX+ border, upY + border, rightX - border , downY - border , 0)
-	draw_rectangle(leftX + 2*border, upY + 2*border, rightX - 2*border , downY - 2*border , 0)
+	draw_rectangle(leftX, upY, rightX, downY, 0)
+	draw_rectangle(leftX, upY, rightX, downY, 1)
 	draw_set_alpha(1)
 }

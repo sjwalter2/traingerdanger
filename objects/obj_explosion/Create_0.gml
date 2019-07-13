@@ -1,6 +1,7 @@
 /// @description Insert description here
 posX = -1;
 posY = -1;
+iamdangerous = 1;
 alarm_set(0,1)
 
 grid = 0;

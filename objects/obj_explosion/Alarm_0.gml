@@ -2,9 +2,8 @@
 // You can write your code in this editor
 
 with obj_player {
-	show_debug_message("My posX is " + string(posX) + " and the explosion's posX is " + string(other.posX))
 	if (posX == other.posX) && (posY == other.posY){
-		instance_destroy()
+		injured = 1;
 	}
 }
 with obj_enemy {
@@ -34,5 +33,8 @@ with obj_grid {
 	
 }
 
-alarm_set(1,60);
-
+if(iamdangerous){
+	iamdangerous = 0;
+	alarm_set(0,20);
+	alarm_set(1,40);
+}

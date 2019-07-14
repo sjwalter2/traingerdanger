@@ -45,8 +45,8 @@ for (var i = 0; i < width; i++)
 }
 for(var i = 0; i < 2;i++)
 {
-	var playerX = irandom(leftMostMountain-1)
-	var playerY = irandom(height-1)
+	var playerX = 2
+	var playerY = i+3
 	var player = instance_create_depth(get_x_from_pos(playerX), get_y_from_pos(playerY),0, obj_player)
 	player.posX = playerX
 	player.posY = playerY
@@ -59,35 +59,13 @@ for(var i = 0; i < 2;i++)
 	
 	
 }
-	//var dynamiteX = irandom(leftMostMountain-1)
-	//var dynamiteY = irandom(height-1)
-	//var dynamite = instance_create_depth(xx + dynamiteX*tileSize + tileSize/2, yy + dynamiteY*tileSize + tileSize/2,0, obj_dynamite)
-	//dynamite.posX = dynamiteX
-	//dynamite.posY = dynamiteY
-	//var dynamite2 = instance_create_depth(xx + (dynamiteX+1)*tileSize + tileSize/2, yy + dynamiteY*tileSize + tileSize/2,0, obj_dynamite)
-	//dynamite2.posX = dynamiteX+1
-	//dynamite2.posY = dynamiteY
 
 
-	var hospital = instance_create_depth(get_x_from_pos(0), get_y_from_pos(0),1, obj_hospital)
-	hospital.posX = 0
-	hospital.posY = 0
 	
-	var dyanmitebldg = instance_create_depth(get_x_from_pos(0), get_y_from_pos(2),1,obj_dynamite_building)
-	dyanmitebldg.posX = 0
-	dyanmitebldg.posY = 2
+
+
 	
-	var railbldg = instance_create_depth(get_x_from_pos(0), get_y_from_pos(4),1,obj_rail_building)
-	railbldg.posX = 0
-	railbldg.posY = 4
-	
-	var storagebldg = instance_create_depth(get_x_from_pos(0),get_y_from_pos(6),1,obj_storage_building)
-	storagebldg.posX = 0
-	storagebldg.posY = 6
-	
-	var playerbldg = instance_create_depth(get_x_from_pos(0),get_y_from_pos(8),1,obj_player_building)
-	playerbldg.posX = 0
-	playerbldg.posY = 8
+
 	
 	var startRail = instance_create_depth(get_x_from_pos(0),get_y_from_pos(floor(height/2)),5,obj_rail)
 	startRail.connection0 = "left"
@@ -114,8 +92,8 @@ for(var i = 0; i < 2;i++)
 	ds_map_replace(grid[width-2, floor(height/2)+1], "borderArray", get_bordering(width-2,floor(height/2)+1,grid))
 global.gameWon = 0;
 global.gameLost = 0;
-global.Iron = 0;
-global.Gems = 0;
+global.Iron = 3;
+global.Gems = 2;
 global.maxTime = 30000;
 
 alarm_set(0,global.maxTime)

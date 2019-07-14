@@ -19,6 +19,6 @@ mineOnReach = -1
 purchaseOnReach = -1
 
 //ACTIONS AND ACTION COSTS
-actions = 10
-actionsMax = 10
+actions = 25
+actionsMax = 25
 actionCostMine = 4

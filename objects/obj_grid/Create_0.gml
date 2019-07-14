@@ -89,5 +89,20 @@ for(var i = 0; i < 5;i++)
 	playerbldg.posX = 0
 	playerbldg.posY = 8
 	
+	var startRail = instance_create_depth(get_x_from_pos(0),get_y_from_pos(floor(height/2)),5,obj_rail)
+	startRail.connection0 = "left"
+	startRail.image_angle = 90
+	startRail.startRail = 1
+	startRail.posX = 0
+	startRail.posY = floor(height/2)
+	
+	var endRail = instance_create_depth(get_x_from_pos(width-1),get_y_from_pos(floor(height/2)),5,obj_rail)
+	endRail.connection0 = "right"
+	endRail.image_angle = 90
+	endRail.endRail = 1
+	endRail.posX = width-1
+	endRail.posY = floor(height/2)
+	
+	
 global.Iron = 0;
 global.Gems = 0;

@@ -1,18 +1,18 @@
 {
-    "id": "d40425c5-c0cb-4b66-8728-0fe16507c595",
+    "id": "9c236906-6a19-4bec-845f-88be75487a17",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_new_game_button",
     "eventList": [
         {
-            "id": "6566c53c-ce34-44c6-8537-1c475677554f",
+            "id": "7d386660-0268-4ac5-adc8-9560c51f406d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 4,
             "eventtype": 6,
-            "m_owner": "d40425c5-c0cb-4b66-8728-0fe16507c595"
+            "m_owner": "9c236906-6a19-4bec-845f-88be75487a17"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "59f6a78b-da08-409a-8a4d-8e0a7a62f8ef",
+    "spriteId": "cb78f8c1-d69d-4e4f-8e94-ef8ede394328",
     "visible": true
 }

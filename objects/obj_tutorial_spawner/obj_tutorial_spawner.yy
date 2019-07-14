@@ -1,8 +1,8 @@
 {
-    "id": "36f6dad9-18a6-4cc7-bf2a-fc6ba41f7762",
+    "id": "dbcf071f-3ee4-4ed2-ad12-040bae9586c7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_tutorial_dialogue",
+    "name": "obj_tutorial_spawner",
     "eventList": [
         
     ],

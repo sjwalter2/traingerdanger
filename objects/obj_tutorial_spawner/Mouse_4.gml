@@ -45,6 +45,7 @@
 	str = "That's it. Go ahead and play the main game!";break;
   case 15:
     room_goto(0);
+	str = "";
 	break;
   default: str = "Something went wrong!";break;
  }

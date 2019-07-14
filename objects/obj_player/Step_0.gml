@@ -79,9 +79,9 @@ if(myTurn  && !pointReached && actions > 0)
 				carrying = noone
 				placeOnReach = -1
 			}
-			if(mineOnReach != -1 && actions >= actionCostMine)
+			if(mineOnReach != -1 && actions > 0)
 			{
- 				actions = actions - actionCostMine;
+ 				actions = 0;
 				if(ds_map_find_value(mineOnReach, "mountain") = 1)
 				{
 					var mineX = ds_map_find_value(mineOnReach, "posX")

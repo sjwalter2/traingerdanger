@@ -23,8 +23,12 @@ while(!currentRail.endRail)
 }
 if(currentRail.endRail)
 {
-	with(obj_gui)
-	{
-		gameWon = 1	
+	global.gameWon = 1	
+	var trainExists = 0
+	with (obj_train){
+		trainExists = 1
+	}
+	if !trainExists {
+		instance_create_depth(1,1,-5,obj_train)
 	}
 }

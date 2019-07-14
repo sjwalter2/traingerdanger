@@ -1,4 +1,7 @@
 var dynamitebuilding = instance_nearest(x,y,obj_dynamite_building)
+if dynamitebuilding == noone{
+	exit;
+}
 if(selected)
 	with(obj_grid)
 	{

@@ -1,4 +1,7 @@
 var railbuilding = instance_nearest(x,y,obj_rail_building)
+if railbuilding == noone{
+	exit;
+}
 if(selected)
 	with(obj_grid)
 	{

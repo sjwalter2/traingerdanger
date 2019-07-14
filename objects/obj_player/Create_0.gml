@@ -17,8 +17,8 @@ injured = 0
 pickingUp = 0
 mineOnReach = -1
 purchaseOnReach = -1
+currentlyMining = 0
 
 //ACTIONS AND ACTION COSTS
 actions = 25
 actionsMax = 25
-actionCostMine = 4

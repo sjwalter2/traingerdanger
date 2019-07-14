@@ -28,5 +28,8 @@
   case 14: str = "You can pick up other objects as well. Try picking up a dynamite.";break;
   default: str = "Something went wrong!";break;
  }
- scr_text(str,1,mouse_x,mouse_y);
+ with(obj_text){
+	instance_destroy()	 
+ }
+ scr_text(str,1,300,800);
 incrementer++

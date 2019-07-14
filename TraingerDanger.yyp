@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "a7ae970c-3bb4-4367-a407-e3e054352cc4",
+            "Value": {
+                "id": "c08d3dff-1e47-44ca-87d1-a7dfc3e9cf5e",
+                "resourcePath": "sprites\\spr_mountainCracks\\spr_mountainCracks.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a7d010a2-a6a1-48a2-b266-7b0f40b5073c",
             "Value": {
                 "id": "9987c3cc-9cc1-4432-9f97-bb0e4d6b86dc",

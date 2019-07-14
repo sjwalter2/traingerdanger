@@ -50,6 +50,7 @@ if(mountain)
 		if(mountainArray[k] = 7)
 			draw_sprite_ext(spr_mountain_border,6,centerX,centerY,1,1,90*k,borderColor1,1)
 	}
+	dra
 	
 }
 if(inRange = 3 || inRange = 1)
@@ -66,5 +67,7 @@ if(inRange = 3 || inRange = 1)
 	}
 	draw_rectangle(leftX + 1, upY + 1, rightX - 1, downY - 1, 0)
 	//draw_rectangle(leftX + 1, upY + 1, rightX - 1, downY - 1, 1)
+		
+		
 	draw_set_alpha(1)
 }

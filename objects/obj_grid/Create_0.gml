@@ -17,7 +17,7 @@ posY
 */
 
 randomize()
-width = 44
+width = 32
 height = 22
 tileSize = 32
 boardWidth = width*tileSize

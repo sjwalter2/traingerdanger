@@ -13,7 +13,7 @@ for(var i = 0; i < w; i++)
 	{
 		var space_map = ds_map_create()
 
-		ds_map_add(space_map, "cost", irandom_range(1,3))
+		ds_map_add(space_map, "cost", irandom_range(1,2))
 		ds_map_add(space_map, "hover", 0)
 		ds_map_add(space_map, "ore", 0)
 		ds_map_add(space_map, "occupied", 0)
@@ -28,8 +28,8 @@ for(var i = 0; i < w; i++)
 }
 
 //generate mountain
-var startPoint = irandom_range(floor(w/6),floor(w/2))
-var rowWidth = irandom_range(w/3,w/2)
+var startPoint = irandom_range(floor(w/4),floor(w/3))
+var rowWidth = irandom_range(w/4,w/3)
 for (var j = 0; j < h; j++)
 {
     for (var i = 0; i < w; i++)

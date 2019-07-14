@@ -1,4 +1,5 @@
 /// @description Insert description here
+sprite_index = asset_get_index("spr_explosion" + string(irandom(2)))
 posX = -1;
 posY = -1;
 iamdangerous = 1;

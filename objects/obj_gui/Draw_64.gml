@@ -15,7 +15,10 @@ if(global.gameWon)
 	draw_text(room_width/2, 80,"Game Won")
 if(global.gameLost)
 	draw_text(room_width/2, 80,"Game Lost")
-draw_text(room_width/3, 30, "Time until train arrives:")
+
 with(obj_grid){
-	draw_text(room_width/3+250, 30,alarm_get(0)/60)
+	if(alarm_get(0) > 0){
+		draw_text(room_width/3, 30, "Time until train arrives:")
+		draw_text(room_width/3+250, 30,alarm_get(0)/60)
+	}
 }

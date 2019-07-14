@@ -1,10 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 var carry = carrying != noone
-if(!myTurn){
+var otherMoving = 0
+with(obj_player)
+	if(myTurn)
+		otherMoving = 1
+if(!myTurn && !otherMoving){
 with(obj_grid)
 {
-	get_range(other.actions, hoverX, hoverY)
+	get_range(other.actions, hoverX, hoverY, other.actionsMax)
 	if(carry)
 	{
 		for(var i = 0; i < width; i++)

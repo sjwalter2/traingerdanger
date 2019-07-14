@@ -18,7 +18,7 @@ if(myTurn && !targetSelected && instance_exists(obj_player))
 	var currentPathY = []
 	with(obj_grid)
 	{
-		get_range(other.actions, other.posX, other.posY)	
+		get_range(other.actions, other.posX, other.posY, other.actions)	
 		for(var i = 0; i < width; i++)
 		{
 			for(var j = 0; j < height; j++)
@@ -57,7 +57,7 @@ if(myTurn && !targetSelected && instance_exists(obj_player))
 				}
 			}
 		}
-		get_range(other.actions, other.posX, other.posY)	
+		get_range(other.actions, other.posX, other.posY, other.actions)		
 		currentPathX = ds_map_find_value(grid[moveToX,moveToY], "pathX")
 		currentPathY = ds_map_find_value(grid[moveToX,moveToY], "pathY")
 		other.targetSelected = 1

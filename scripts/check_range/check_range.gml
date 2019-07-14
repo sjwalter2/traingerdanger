@@ -4,6 +4,7 @@ var yy = argument2
 var pathX = argument3
 var pathY = argument4
 var grid = argument5
+var rangeCount = argument6
 
 var i = 0;
 var checkX = 0;
@@ -60,15 +61,15 @@ for(var rotate = 0; rotate <= 3; rotate++)
 		if(tileCost + i <= actions)
 		{
 			i += tileCost
-			if(ds_map_find_value(tile, "inRange") = 0 || ds_map_find_value(tile, "pathCost") < actions - i)
+			if(ds_map_find_value(tile, "inRange") != rangeCount || ds_map_find_value(tile, "pathCost") < actions - i)
 			{
-				ds_map_replace(tile, "inRange", 1)
+				ds_map_replace(tile, "inRange", rangeCount)
 				ds_map_replace(tile, "pathCost",  actions - i)
 				pathX[array_length_1d(pathX)] = xx + checkX
 				pathY[array_length_1d(pathY)] = yy + checkY
 				ds_map_replace(tile, "pathX",  pathX)
 				ds_map_replace(tile, "pathY", pathY)
-				check_range(actions-i, xx + checkX, yy + checkY, pathX, pathY, grid)
+				check_range(actions-i, xx + checkX, yy + checkY, pathX, pathY, grid, rangeCount)
 				checkX += xMod
 				checkY += yMod
 			}

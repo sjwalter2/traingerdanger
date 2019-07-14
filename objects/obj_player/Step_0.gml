@@ -14,25 +14,29 @@ if injured {
 	instance_destroy()
 }
 
-if(myTurn  && pointReached)
+if(myTurn  && pointReached && actions > 0)
 {
 	var startX = 0
 	var startY = 0
 	var size = 0
+	selected = 0
 	with(obj_grid)
 	{
 		startX = xx
 		startY = yy
 		size = tileSize
 	}
-	currentTargetX = startX + pathToTargetX[pathCount]*size + size/2
-	currentTargetY = startY + pathToTargetY[pathCount]*size + size/2
+	if(array_length_1d(pathToTargetX) > 0)
+	{
+		currentTargetX = startX + pathToTargetX[pathCount]*size + size/2
+		currentTargetY = startY + pathToTargetY[pathCount]*size + size/2
+	}
 	
 	move_towards_point(currentTargetX,currentTargetY,moveSpeed)
 	pointReached = 0
 
 }
-if(myTurn  && !pointReached)
+if(myTurn  && !pointReached && actions > 0)
 {
 	if(point_distance(x,y,currentTargetX,currentTargetY) <= moveSpeed)
 	{
@@ -42,6 +46,8 @@ if(myTurn  && !pointReached)
 		if(pathCount != 0){
 			with (obj_grid){
 				other.actions = other.actions - ds_map_find_value(grid[other.posX, other.posY], "cost")
+				if(other.actions < 0)
+					other.actions = 0
 			}
 		}
 		pathCount++	
@@ -133,4 +139,12 @@ if(myTurn  && !pointReached)
 			alarm_set(1,5)
 		}
 	}
+}
+else if(myTurn && ds_map_find_value(grid.grid[posX,posY], "cost")> actions)
+{
+	speed = 0
+	x = get_x_from_pos(posX)
+	y = get_y_from_pos(posY)
+	myTurn = 0
+	myTurnOnNew = 1
 }

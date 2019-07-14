@@ -3,7 +3,7 @@ var w = argument0
 var h = argument1 
 
 var grid = []
-var iters = 5
+var iters = 3
 var chance = 2
 var ironOdds = 10
 var gemOdds = 20
@@ -13,7 +13,7 @@ for(var i = 0; i < w; i++)
 	{
 		var space_map = ds_map_create()
 
-		ds_map_add(space_map, "cost", irandom_range(1,2))
+		ds_map_add(space_map, "cost", irandom_range(1,1))
 		ds_map_add(space_map, "hover", 0)
 		ds_map_add(space_map, "ore", 0)
 		ds_map_add(space_map, "occupied", 0)
@@ -29,7 +29,7 @@ for(var i = 0; i < w; i++)
 
 //generate mountain
 var startPoint = irandom_range(floor(w/4),floor(w/3))
-var rowWidth = irandom_range(w/4,w/3)
+var rowWidth = irandom_range(w/5,w/4)
 for (var j = 0; j < h; j++)
 {
     for (var i = 0; i < w; i++)

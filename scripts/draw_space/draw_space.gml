@@ -50,7 +50,13 @@ if(mountain)
 		if(mountainArray[k] = 7)
 			draw_sprite_ext(spr_mountain_border,6,centerX,centerY,1,1,90*k,borderColor1,1)
 	}
-	
+	var crack =  ds_map_find_value(map,"crack")
+	if(crack != -1)
+	{
+		draw_set_alpha(.2)
+		draw_sprite(spr_mountainCracks,crack,centerX,centerY)
+		draw_set_alpha(1)
+	}
 	
 }
 if(inRange = 3 || inRange = 1)

@@ -40,7 +40,11 @@ for (var j = 0; j < h; j++)
 			mount = 1
 		}
 		ds_map_add(grid[i,j], "mountain", mount)
-		ds_map_add(grid[i,j], "crack", 0 )
+		if(irandom(8) = 0)
+			ds_map_add(grid[i,j], "crack", irandom(9))
+		else
+			ds_map_add(grid[i,j], "crack", -1)
+		
 		
 	}
 	if(i < w/2)

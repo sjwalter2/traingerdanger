@@ -94,6 +94,5 @@ global.gameWon = 0;
 global.gameLost = 0;
 global.Iron = 3;
 global.Gems = 2;
-global.maxTime = 30000;
+global.maxTime = 0;
 
-alarm_set(0,global.maxTime)

@@ -1,10 +1,31 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
  var str;
+ var strX = 300;
+ var strY = 800;
  switch (incrementer)
  {
-  case 0: str = "Left click on a worker to select. Left click to move.";break;
+  case -3:
+    str = "Just got off the phone with the CEO! We're in big trouble!"
+	var player = instance_create_depth(get_x_from_pos(0), get_y_from_pos(5),0, obj_player)
+	player.posX = 0
+	player.posY = 5
+	strX = get_x_from_pos(0) + 30
+	strY = get_y_from_pos(5) - 20
+	break;
+  case -2:
+	str = "Our company, International Railway Machines (IRM) is unveiling a secret new train: the Super Duper Deluxe Bullet Train!"
+	strX = get_x_from_pos(0) + 30
+	strY = get_y_from_pos(5) - 20
+	break;
+  case -1:
+  	str = "They're sending it straight our way! Have we finished the tunnel project yet? ... We haven't even started?!"
+	strX = get_x_from_pos(0) + 30
+	strY = get_y_from_pos(5) - 20
+	break;
+  case 0: str = "Let's get to work! Left click on a worker to select. Left click to move.";break;
   case 1: str = "Right click also moves, or performs context-specific events.";break;
   case 2:
  	var railbldg = instance_create_depth(get_x_from_pos(0), get_y_from_pos(4),1,obj_rail_building)
@@ -53,11 +74,13 @@
     str = "Gather 2 gems and you can hire a new worker! Right click here with another worker to train them.";break;
   case 13:
 	with(obj_lookatme){instance_destroy()};
-    str = "This is a placeholder, just in case we add more features like upgrading dynamite or building buildings!"
+    str = "As a shortcut to send a worker to the dynamite building or railway building, you can select them and press the D or R key."
   break;
   case 14:
-	str = "That's it. Go ahead and play the main game!";break;
+	str = "They must be nearby for it to work!";break;
   case 15:
+	str = "That's it. Go ahead and play the main game!";break;
+  case 16:
     room_goto(0);
 	str = "";
 	break;
@@ -66,5 +89,5 @@
  with(obj_text){
 	instance_destroy()	 
  }
- scr_text(str,1,300,800);
+ scr_text(str,1,strX,strY);
 incrementer++

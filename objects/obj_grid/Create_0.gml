@@ -108,6 +108,6 @@ global.gameWon = 0;
 global.gameLost = 0;
 global.Iron = 0;
 global.Gems = 0;
-global.TurnCount = 0;
-global.MaxTurn = 10;
-global.WhoseTurn = "player"  // options are: player, enemy
+global.maxTime = 30000;
+
+alarm_set(0,global.maxTime)

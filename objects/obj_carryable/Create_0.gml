@@ -2,3 +2,4 @@
 // You can write your code in this editor
 placed = 0
 set = 0
+isOre = 0

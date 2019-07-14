@@ -17,7 +17,8 @@ injured = 0
 pickingUp = 0
 mineOnReach = -1
 purchaseOnReach = -1
-
+mining = 0
+mineTimer = 400
 myTurnOnNew = 0
 grid = 0
 with(obj_grid)

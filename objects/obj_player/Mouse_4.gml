@@ -5,7 +5,7 @@ var carry = carrying != noone
 //with(obj_player)
 //	if(myTurn)
 //		otherMoving = 1
-if(!myTurn){
+if(!mining){
 with(obj_grid)
 {
 	get_range(other.actions, hoverX, hoverY, other.actionsMax)

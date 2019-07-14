@@ -26,7 +26,7 @@ if(selected)
 		}
 		with(obj_building)
 		{
-			if(object_index != obj_storage_building && (posX = other.hoverX || posX + 1 = other.hoverX) && posY = other.hoverY && carryingPlayer != noone)	
+			if((object_index != obj_storage_building || (object_index ==obj_storage_building && instance_exists(item) && item.isOre = 0)) && (posX = other.hoverX || posX + 1 = other.hoverX) && posY = other.hoverY && carryingPlayer != noone)	
 				conflict = 1
 		}
 		var mx = mouse_x

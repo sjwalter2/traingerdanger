@@ -1,3 +1,1 @@
-if global.WhoseTurn == "player" {
-	global.WhoseTurn = "enemy"
-}
+event_user(0)

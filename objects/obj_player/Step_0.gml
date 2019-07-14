@@ -82,11 +82,15 @@ if(myTurn  && !pointReached)
 					var mineY = ds_map_find_value(mineOnReach, "posY")
 					if(ds_map_find_value(mineOnReach, "ore") = 1)
 					{
-						instance_create_depth(get_x_from_pos(mineX), get_y_from_pos(mineY),-10,obj_gem)
+						var placedObj = instance_create_depth(get_x_from_pos(mineX), get_y_from_pos(mineY),-10,obj_gem)
+						placedObj.xPos = mineX
+						placedObj.yPox= mineY
 					}
 					if(ds_map_find_value(mineOnReach, "ore") = 2)
 					{
-						instance_create_depth(get_x_from_pos(mineX), get_y_from_pos(mineY),-10,obj_iron)
+						var placedObj = instance_create_depth(get_x_from_pos(mineX), get_y_from_pos(mineY),-10,obj_iron)
+						placedObj.xPos = mineX
+						placedObj.yPox = mineY
 					}
 					with(obj_grid)	
 					{

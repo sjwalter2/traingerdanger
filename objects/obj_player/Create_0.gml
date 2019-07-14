@@ -26,3 +26,4 @@ with(obj_grid)
 actions = 8
 actionsMax = 8
 actionCostMine = 4
+image_index = irandom(image_number)

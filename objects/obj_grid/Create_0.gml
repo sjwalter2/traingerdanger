@@ -103,7 +103,15 @@ for(var i = 0; i < 5;i++)
 	endRail.endRail = 1
 	endRail.posX = width-1
 	endRail.posY = floor(height/2)
-	
+	ds_map_replace(grid[width-1, floor(height/2)], "mountain", 0)
+	ds_map_replace(grid[width-1, floor(height/2)], "cost", 1)
+	ds_map_replace(grid[width-1, floor(height/2)], "ore", 0)
+	ds_map_replace(grid[width-1, floor(height/2)], "borderArray", get_bordering(width-1,floor(height/2),grid))
+	ds_map_replace(grid[width-2, floor(height/2)], "borderArray", get_bordering(width-2,floor(height/2),grid))
+	ds_map_replace(grid[width-1, floor(height/2)+1], "borderArray", get_bordering(width-1,floor(height/2)+1,grid))
+	ds_map_replace(grid[width-1, floor(height/2)-1], "borderArray", get_bordering(width-1,floor(height/2)-1,grid))
+	ds_map_replace(grid[width-2, floor(height/2)-1], "borderArray", get_bordering(width-2,floor(height/2)-1,grid))
+	ds_map_replace(grid[width-2, floor(height/2)+1], "borderArray", get_bordering(width-2,floor(height/2)+1,grid))
 global.gameWon = 0;
 global.gameLost = 0;
 global.Iron = 0;

@@ -42,6 +42,30 @@ with grid{
 		expl.posX = other.posX+1;
 		expl.posY = other.posY;
 	}
+	if(U && L)
+	{
+		var expl = instance_create_depth(get_x_from_pos(other.posX-1), get_y_from_pos(other.posY-1),-1, obj_explosion)
+		expl.posX = other.posX-1;
+		expl.posY = other.posY-1;	
+	}
+	if(U && R)
+	{
+		var expl = instance_create_depth(get_x_from_pos(other.posX+1), get_y_from_pos(other.posY-1),-1, obj_explosion)
+		expl.posX = other.posX+1;
+		expl.posY = other.posY-1;	
+	}
+	if(D && L)
+	{
+		var expl = instance_create_depth(get_x_from_pos(other.posX-1), get_y_from_pos(other.posY+1),-1, obj_explosion)
+		expl.posX = other.posX-1;
+		expl.posY = other.posY+1;	
+	}
+	if(D && R)
+	{
+		var expl = instance_create_depth(get_x_from_pos(other.posX+1), get_y_from_pos(other.posY+1),-1, obj_explosion)
+		expl.posX = other.posX+1;
+		expl.posY = other.posY+1;	
+	}
 	var expl = instance_create_depth(get_x_from_pos(other.posX), get_y_from_pos(other.posY),-1, obj_explosion)		
 	expl.posX = other.posX;
 	expl.posY = other.posY;

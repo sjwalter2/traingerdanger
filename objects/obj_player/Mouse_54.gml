@@ -31,7 +31,7 @@ if(selected)
 		}
 		var mx = mouse_x
 		var my = mouse_y
-		if (!conflict && carryingPlayer != noone && 
+		if ((!conflict || (item.object_index == obj_injuredplayer && instance_position(mx,my,obj_hospital))) && carryingPlayer != noone && 
 			(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
 			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
 			ds_map_find_value(grid[hoverX,hoverY],"inRange") != 0) &&

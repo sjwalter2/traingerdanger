@@ -91,3 +91,5 @@ for(var i = 0; i < 5;i++)
 	
 global.Iron = 0;
 global.Gems = 0;
+global.TurnCount = 0;
+global.WhoseTurn = "player"  // options are: player, enemy

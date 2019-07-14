@@ -5,7 +5,6 @@ posY = -1
 goalX = -1
 goalY = -1
 placeOnReach = -1
-actions = 10
 selected = 0
 carrying = noone
 pathToTargetX = []
@@ -18,3 +17,8 @@ injured = 0
 pickingUp = 0
 mineOnReach = -1
 purchaseOnReach = -1
+
+//ACTIONS AND ACTION COSTS
+actions = 10
+actionsMax = 10
+actionCostMine = 4

@@ -79,14 +79,6 @@
             }
         },
         {
-            "Key": "113a0c06-8567-4584-a94d-213c67d4f390",
-            "Value": {
-                "id": "b15b2cb2-d4ce-43d7-b518-d120e7072416",
-                "resourcePath": "objects\\obj_text\\obj_text.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "14c7984f-cbb7-4eb1-b781-abcdeb88fad7",
             "Value": {
                 "id": "335b155f-5b6b-4051-950e-c4d8ab05f194",
@@ -154,7 +146,7 @@
             "Key": "276a92c8-5c41-49e8-810d-508382a6e8ec",
             "Value": {
                 "id": "c8e88f87-a1b7-40d8-a80d-c7d7c400cde8",
-                "resourcePath": "sprites\\spr_player\\spr_player.yy",
+                "resourcePath": "sprites\\spr_player0\\spr_player0.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -175,11 +167,11 @@
             }
         },
         {
-            "Key": "36f6dad9-18a6-4cc7-bf2a-fc6ba41f7762",
+            "Key": "3328b61e-c803-4622-bff1-b45ecddf6356",
             "Value": {
-                "id": "63a3dba4-2445-4ec5-a207-230480d2225b",
-                "resourcePath": "objects\\obj_tutorial_dialogue\\obj_tutorial_dialogue.yy",
-                "resourceType": "GMObject"
+                "id": "0767bb3b-c7ae-4b00-bda7-8164a6fec22d",
+                "resourcePath": "sprites\\spr_player1\\spr_player1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -295,27 +287,19 @@
             }
         },
         {
-            "Key": "5138c5f4-d4a5-4524-a826-b8d6c4580a01",
-            "Value": {
-                "id": "7f5905a0-f969-43f2-b206-bcfe85fc3084",
-                "resourcePath": "rooms\\tutorial\\tutorial.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "59f6a78b-da08-409a-8a4d-8e0a7a62f8ef",
-            "Value": {
-                "id": "f5c23d0e-54ee-4a3a-a272-2ee4f6a40ff3",
-                "resourcePath": "sprites\\spr_newgamebutton\\spr_newgamebutton.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "5c1c1753-d301-4408-af21-c0427914221a",
             "Value": {
                 "id": "2cfb6dfe-0ac1-493b-8c8f-558282241803",
                 "resourcePath": "views\\5c1c1753-d301-4408-af21-c0427914221a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5c3a5c0a-2814-495e-be45-fdf8a1e2717c",
+            "Value": {
+                "id": "4e63370a-e0fa-4128-a4c8-1a676c2f42c8",
+                "resourcePath": "sprites\\spr_player2\\spr_player2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -340,14 +324,6 @@
                 "id": "a798a930-e09b-4759-be20-bded4d20cc96",
                 "resourcePath": "sprites\\spr_dynamite\\spr_dynamite.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "6ccc9250-2a6b-455a-bc9b-87e47366da13",
-            "Value": {
-                "id": "703793ed-c0e2-41fb-80a4-5b326ca581a8",
-                "resourcePath": "scripts\\scr_text\\scr_text.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -380,14 +356,6 @@
                 "id": "0b511d18-af79-43c3-89b5-b4cfeb335e16",
                 "resourcePath": "scripts\\draw_circular_bar\\draw_circular_bar.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "7abbb168-3614-49fd-8069-d4b5fb2f7872",
-            "Value": {
-                "id": "5de503af-a089-4b0b-964e-7fb6f99a491f",
-                "resourcePath": "sprites\\spr_tutorialbutton\\spr_tutorialbutton.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -471,14 +439,6 @@
             }
         },
         {
-            "Key": "9f4315de-a279-4662-918b-b4fd507b9c4c",
-            "Value": {
-                "id": "e9631214-2e0b-4777-8b0f-d6e51b2077bd",
-                "resourcePath": "objects\\obj_tutorial_button\\obj_tutorial_button.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "cf8b44ba-4008-411c-a733-a1f6167a3ea6",
@@ -535,27 +495,11 @@
             }
         },
         {
-            "Key": "acdc8e8e-4d4f-4ae2-a1be-04a42e248515",
-            "Value": {
-                "id": "1f14038f-debd-4991-b313-b9f0faa8e466",
-                "resourcePath": "rooms\\mainmenu\\mainmenu.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "b3b80253-9b2e-4fae-bb1c-ab240524c2b2",
             "Value": {
                 "id": "95fbaa94-c34b-43cd-bf49-f3e3a279fef9",
                 "resourcePath": "sprites\\spr_new_turn_button\\spr_new_turn_button.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "b8abcc6d-ee7e-407f-85fe-5c5aa83e64ef",
-            "Value": {
-                "id": "47d412aa-2437-4cdb-84c1-b7f01270de30",
-                "resourcePath": "fonts\\tutorialfont\\tutorialfont.yy",
-                "resourceType": "GMFont"
             }
         },
         {
@@ -620,14 +564,6 @@
                 "id": "89f9f1e9-b7d8-4a2a-85c0-d7b8a6a05430",
                 "resourcePath": "sprites\\spr_mountain_border\\spr_mountain_border.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "d40425c5-c0cb-4b66-8728-0fe16507c595",
-            "Value": {
-                "id": "4facbac7-42ac-482f-a2d2-9e371eb353f7",
-                "resourcePath": "objects\\obj_new_game_button\\obj_new_game_button.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -748,8 +684,7 @@
         "41163e64-5505-42be-abd0-f3a0ed79cefa",
         "972c9a67-b69b-4fa3-9744-07572471ac10",
         "74c20f65-2adb-4271-98dc-31cf5c7cdc90",
-        "5074fccf-cd06-4d1c-9d10-92ea9526748f",
-        "6ccc9250-2a6b-455a-bc9b-87e47366da13"
+        "5074fccf-cd06-4d1c-9d10-92ea9526748f"
     ],
     "tutorial": ""
 }

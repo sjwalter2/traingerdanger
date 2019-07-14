@@ -50,7 +50,7 @@ if(mountain)
 		if(mountainArray[k] = 7)
 			draw_sprite_ext(spr_mountain_border,6,centerX,centerY,1,1,90*k,borderColor1,1)
 	}
-	dra
+	
 	
 }
 if(inRange = 3 || inRange = 1)

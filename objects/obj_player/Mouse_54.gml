@@ -26,12 +26,12 @@ if(selected)
 		}
 		with(obj_building)
 		{
-			if(object_index != obj_storage_building && posX = other.hoverX && posY = other.hoverY && carryingPlayer != noone)	
+			if(object_index != obj_storage_building && (posX = other.hoverX || posX + 1 = other.hoverX) && posY = other.hoverY && carryingPlayer != noone)	
 				conflict = 1
 		}
 		var mx = mouse_x
 		var my = mouse_y
-		if ((!conflict || (item.object_index == obj_injuredplayer && instance_position(mx,my,obj_hospital))) && carryingPlayer != noone && 
+		if ((!conflict || (instance_exists(item) && item.object_index == obj_injuredplayer && instance_position(mx,my,obj_hospital))) && carryingPlayer != noone && 
 			(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
 			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
 			ds_map_find_value(grid[hoverX,hoverY],"inRange") != 0) &&

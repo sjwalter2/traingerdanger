@@ -114,7 +114,7 @@ for(var i = 0; i < 2;i++)
 	ds_map_replace(grid[width-2, floor(height/2)+1], "borderArray", get_bordering(width-2,floor(height/2)+1,grid))
 global.gameWon = 0;
 global.gameLost = 0;
-global.Iron = 0;
+global.Iron = 3;
 global.Gems = 0;
 global.maxTime = 30000;
 

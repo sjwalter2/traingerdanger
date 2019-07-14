@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "9cda881e-f1ec-4ac3-8035-70b5be89defa",
+            "Value": {
+                "id": "65f7a13b-18e0-41bc-9df4-491ce1851e41",
+                "resourcePath": "sprites\\spr_no_iron\\spr_no_iron.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9dfde0a5-57ea-4ab9-b811-736143e8c520",
             "Value": {
                 "id": "c49a7351-be00-41b4-baf8-7507923906c2",

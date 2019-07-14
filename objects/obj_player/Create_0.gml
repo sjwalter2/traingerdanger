@@ -26,4 +26,5 @@ with(obj_grid)
 actions = 8
 actionsMax = 8
 actionCostMine = 4
-image_index = irandom(image_number)
+
+sprite_index = asset_get_index("spr_player" + string(irandom(2)))

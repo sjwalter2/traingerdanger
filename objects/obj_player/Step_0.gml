@@ -30,6 +30,8 @@ if(myTurn  && pointReached && actions > 0)
 	{
 		currentTargetX = startX + pathToTargetX[pathCount]*size + size/2
 		currentTargetY = startY + pathToTargetY[pathCount]*size + size/2
+		
+		
 	}
 	
 	move_towards_point(currentTargetX,currentTargetY,moveSpeed)
@@ -41,8 +43,26 @@ if(myTurn  && !pointReached && actions > 0)
 	if(point_distance(x,y,currentTargetX,currentTargetY) <= moveSpeed)
 	{
 		pointReached = 1
+		var lastPosX = posX
+		var lastPosY = posY
 		posX = pathToTargetX[pathCount]
 		posY = pathToTargetY[pathCount]
+		if(posX < lastPosX)
+		{
+			image_index = 3
+		}
+		else if(posX > lastPosX)
+		{
+			image_index = 1
+		}
+		else if(posY < lastPosY)
+		{
+			image_index = 2
+		}
+		else if(posY > lastPosY)
+		{
+			image_index = 0
+		}
 		if(pathCount != 0){
 			with (obj_grid){
 				//other.actions = other.actions - ds_map_find_value(grid[other.posX, other.posY], "cost")
@@ -63,6 +83,7 @@ if(myTurn  && !pointReached && actions > 0)
 			x = currentTargetX
 			y = currentTargetY 
 			speed = 0
+			image_index = 0
 			if(placeOnReach != -1 && carrying != noone)
 			{
 				with(obj_grid)

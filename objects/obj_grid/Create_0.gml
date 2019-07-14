@@ -97,11 +97,11 @@ for(var i = 0; i < 5;i++)
 	startRail.posY = floor(height/2)
 	
 //	var endRail = instance_create_depth(get_x_from_pos(width-1),get_y_from_pos(floor(height/2)),5,obj_rail)
-	var endRail = instance_create_depth(get_x_from_pos(4),get_y_from_pos(floor(height/2)),5,obj_rail)
+	var endRail = instance_create_depth(get_x_from_pos(width-1),get_y_from_pos(floor(height/2)),5,obj_rail)
 	endRail.connection0 = "right"
 	endRail.image_angle = 90
 	endRail.endRail = 1
-	endRail.posX = 4
+	endRail.posX = width-1
 	endRail.posY = floor(height/2)
 	
 global.gameWon = 0;

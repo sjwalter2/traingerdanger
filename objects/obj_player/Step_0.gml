@@ -45,7 +45,7 @@ if(myTurn  && !pointReached && actions > 0)
 		posY = pathToTargetY[pathCount]
 		if(pathCount != 0){
 			with (obj_grid){
-				other.actions = other.actions - ds_map_find_value(grid[other.posX, other.posY], "cost")
+				//other.actions = other.actions - ds_map_find_value(grid[other.posX, other.posY], "cost")
 				if(other.actions < 0)
 					other.actions = 0
 			}
@@ -81,7 +81,7 @@ if(myTurn  && !pointReached && actions > 0)
 			}
 			if(mineOnReach != -1 && actions > 0)
 			{
- 				actions = 0;
+ 				//actions = 0;
 				if(ds_map_find_value(mineOnReach, "mountain") = 1)
 				{
 					var mineX = ds_map_find_value(mineOnReach, "posX")

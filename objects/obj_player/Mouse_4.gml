@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 var carry = carrying != noone
-var otherMoving = 0
-with(obj_player)
-	if(myTurn)
-		otherMoving = 1
-if(!myTurn && !otherMoving){
+//var otherMoving = 0
+//with(obj_player)
+//	if(myTurn)
+//		otherMoving = 1
+if(!myTurn){
 with(obj_grid)
 {
 	get_range(other.actions, hoverX, hoverY, other.actionsMax)

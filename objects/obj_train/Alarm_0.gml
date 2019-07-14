@@ -14,14 +14,20 @@ if(!currentRail.endRail)
 		currentRail = currentRail.rail1	
 	} else {
 		with(obj_grid){
-			var dynamite = instance_create_depth(get_x_from_pos(other.posX+1), get_y_from_pos(other.posY),0, obj_dynamite)
-			dynamite.posX = other.posX+1
-			dynamite.posY = other.posY
-			with dynamite{alarm_set(0,10)}
-			dynamite = instance_create_depth(get_x_from_pos(other.posX-1), get_y_from_pos(other.posY),0, obj_dynamite)
-			dynamite.posX = other.posX-1
-			dynamite.posY = other.posY
-			with dynamite{alarm_set(0,10)}
+			if(other.posX < width -1)
+			{
+				var dynamite = instance_create_depth(get_x_from_pos(other.posX+1), get_y_from_pos(other.posY),0, obj_dynamite)
+				dynamite.posX = other.posX+1
+				dynamite.posY = other.posY
+				with dynamite{alarm_set(0,10)}
+			}
+			if(other.posX > 0)
+			{
+				dynamite = instance_create_depth(get_x_from_pos(other.posX-1), get_y_from_pos(other.posY),0, obj_dynamite)
+				dynamite.posX = other.posX-1
+				dynamite.posY = other.posY
+				with dynamite{alarm_set(0,10)}
+			}
 		}
 		instance_destroy()
 	}

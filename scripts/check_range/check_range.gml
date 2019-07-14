@@ -48,7 +48,7 @@ for(var rotate = 0; rotate <= 3; rotate++)
 		with(obj_player)
 		{
 			if(xx + checkX == posX && yy + checkY == posY)	
-				conflict = 1
+				conflict = 0
 		}
 		if(!conflict && xx + checkX < array_height_2d(grid) && xx + checkX >= 0 && yy + checkY < array_length_2d(grid, 0) && yy + checkY >= 0)
 		{

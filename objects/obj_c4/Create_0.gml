@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+// Inherit the parent event
 event_inherited();
-upgraded = 0;
-dynamite_spawn_rate = 300
-alarm_set(1,dynamite_spawn_rate)
+
+alarm_max = 1500
+alarm_set(0,alarm_max)

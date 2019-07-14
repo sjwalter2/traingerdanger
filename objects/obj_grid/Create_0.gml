@@ -43,7 +43,7 @@ for (var i = 0; i < width; i++)
 	if(leftMostMountain != width)
 		break;
 }
-for(var i = 0; i < 5;i++)
+for(var i = 0; i < 2;i++)
 {
 	var playerX = irandom(leftMostMountain-1)
 	var playerY = irandom(height-1)
@@ -59,14 +59,14 @@ for(var i = 0; i < 5;i++)
 	
 	
 }
-	var dynamiteX = irandom(leftMostMountain-1)
-	var dynamiteY = irandom(height-1)
-	var dynamite = instance_create_depth(xx + dynamiteX*tileSize + tileSize/2, yy + dynamiteY*tileSize + tileSize/2,0, obj_dynamite)
-	dynamite.posX = dynamiteX
-	dynamite.posY = dynamiteY
-	var dynamite2 = instance_create_depth(xx + (dynamiteX+1)*tileSize + tileSize/2, yy + dynamiteY*tileSize + tileSize/2,0, obj_dynamite)
-	dynamite2.posX = dynamiteX+1
-	dynamite2.posY = dynamiteY
+	//var dynamiteX = irandom(leftMostMountain-1)
+	//var dynamiteY = irandom(height-1)
+	//var dynamite = instance_create_depth(xx + dynamiteX*tileSize + tileSize/2, yy + dynamiteY*tileSize + tileSize/2,0, obj_dynamite)
+	//dynamite.posX = dynamiteX
+	//dynamite.posY = dynamiteY
+	//var dynamite2 = instance_create_depth(xx + (dynamiteX+1)*tileSize + tileSize/2, yy + dynamiteY*tileSize + tileSize/2,0, obj_dynamite)
+	//dynamite2.posX = dynamiteX+1
+	//dynamite2.posY = dynamiteY
 
 
 	var hospital = instance_create_depth(get_x_from_pos(0), get_y_from_pos(0),1, obj_hospital)

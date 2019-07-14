@@ -25,6 +25,6 @@ if(currentRail.endRail)
 {
 	with(obj_gui)
 	{
-		gameWon = 1	
+		global.gameWon = 1	
 	}
 }

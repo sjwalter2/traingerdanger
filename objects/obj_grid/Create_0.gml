@@ -103,8 +103,10 @@ for(var i = 0; i < 5;i++)
 	endRail.posX = width-1
 	endRail.posY = floor(height/2)
 	
-	
+global.gameWon = 0;
+global.gameLost = 0;
 global.Iron = 0;
 global.Gems = 0;
 global.TurnCount = 0;
+global.MaxTurn = 10;
 global.WhoseTurn = "player"  // options are: player, enemy

@@ -1,8 +1,11 @@
 if global.Gems >= upgradeCost {
-	myBuilding.upgrade = 1;
+	global.MineSpeedUpgrade = 1;
+	with obj_player{
+		mineTimer = 200;
+	}
 	global.Gems = global.Gems - upgradeCost
 	with mytextbox{instance_destroy()}
-	mytextbox =  scr_text("Dynamite Upgraded!",1,x-200,y-20);
+	mytextbox =  scr_text("Mine Speed Upgraded!",1,x-200,y-20);
 	with mytextbox{
 		alarm_set(1,300)
 	}

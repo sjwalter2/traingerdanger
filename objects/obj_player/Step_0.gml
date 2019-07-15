@@ -116,12 +116,19 @@ if(myTurn  && !pointReached && actions > 0)
 				{
 					var playerbldg = instance_position(myX,myY,obj_player_building)
 					with playerbldg{
-						if global.Gems >= playerCost{
-							alarm_set(1,player_spawn_rate)
-							global.Gems = global.Gems - playerCost
-						} else {
-							show_debug_message("Not enough gems!")
+						if global.WalkSpeedUpgrade == 0 {
+							var upgradeWalkArrow = instance_create_depth(x - 50,y-60, -10, obj_upgrade_walkspeed)
+							upgradeWalkArrow.myPlayer = other.id;
+							upgradeWalkArrow.myBuilding = id;
 						}
+						if global.MineSpeedUpgrade == 0 {
+							var upgradeMineArrow = instance_create_depth(x - 50,y+60, -10, obj_upgrade_minespeed)
+							upgradeMineArrow.myPlayer = other.id;
+							upgradeMineArrow.myBuilding = id;
+						}
+						var newWorkerArrow = instance_create_depth(x - 50, y, -10, obj_new_worker)
+						newWorkerArrow.myPlayer = other.id;
+						newWorkerArrow.myBuilding = id;
 					}
 				} else if(instance_position(myX,myY,obj_dynamite_building))
 				{
@@ -130,7 +137,7 @@ if(myTurn  && !pointReached && actions > 0)
 						if upgrade == 1 {
 							show_debug_message("Already upgraded!")
 						} else  {
-							var upgradeArrow = instance_create_depth(x - 64,y, -10, obj_upgrade_to_c4)
+							var upgradeArrow = instance_create_depth(x - 50,y, -10, obj_upgrade_to_c4)
 							upgradeArrow.myPlayer = other.id;
 							upgradeArrow.myBuilding = id;
 						}

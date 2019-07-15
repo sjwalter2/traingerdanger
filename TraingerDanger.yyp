@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "6a3ef80a-86da-400e-8925-b14666a67c83",
+            "Value": {
+                "id": "e03f68c3-121f-41a9-bf61-438cc02ba227",
+                "resourcePath": "sprites\\spr_upgrade_button\\spr_upgrade_button.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6ac3c189-d2dd-4bec-8fcd-de65f0eadfb8",
             "Value": {
                 "id": "a798a930-e09b-4759-be20-bded4d20cc96",
@@ -588,6 +596,14 @@
                 "id": "741f75a1-bd04-46df-947f-615b0a58c493",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "b21fadd6-25de-4735-82d8-e53329e8ce1f",
+            "Value": {
+                "id": "03a77339-ff83-484e-bd04-f44005f0fa53",
+                "resourcePath": "objects\\obj_upgrade_to_c4\\obj_upgrade_to_c4.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if upgraded {
+if upgrade {
 	var product = obj_c4
 } else {
 	var product = obj_dynamite

@@ -32,6 +32,9 @@
   case 2:
  	var railbldg = instance_create_depth(get_x_from_pos(0), get_y_from_pos(4),1,obj_rail_building)
 	 instance_create_depth(get_x_from_pos(0), get_y_from_pos(4),-100,obj_lookatme);
+	 with railbldg{
+		 alarm_set(1,10);
+	 }
 	railbldg.posX = 0;
 	railbldg.posY = 4;
 	str = "This building produces rails. Move a worker onto a rail piece.";
@@ -75,14 +78,20 @@
 	playerbldg.posY = 8
     str = "Gather 2 gems and you can hire a new worker! Right click here with another worker to train them.";break;
   case 13:
+    str = "You can also upgrade the hiring board and dynamite buildings with a right click. Try it out in the main game."; break;
+  case 14:
 	with(obj_lookatme){instance_destroy()};
     str = "As a shortcut to send a worker to the dynamite building or railway building, you can select them and press the D or R key."
   break;
-  case 14:
-	str = "They must be nearby for it to work!";break;
   case 15:
-	str = "That's it. Go ahead and play the main game!";break;
+	str = "They must be nearby for it to work!";break;
   case 16:
+	str = "Last thing. Keep an eye out for Bomb Bats. They'll look for dynamite and try to blow you up with it.";break;
+  case 17:
+    str = "You can just stomp them to be rid of them... But once they pick up dynamite, it's probably best to just run away!";break;
+  case 18:
+	str = "That's it. Go ahead and play the main game!";break;
+  case 19:
     room_goto(0);
 	str = "";
 	break;

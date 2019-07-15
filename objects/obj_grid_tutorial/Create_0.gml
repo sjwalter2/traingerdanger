@@ -50,10 +50,10 @@ for (var i = 0; i < width; i++)
 	if(leftMostMountain != width)
 		break;
 }
-for(var i = 0; i < 2;i++)
+for(var i = 0; i < 3;i++)
 {
 	var playerX = 2
-	var playerY = i+3
+	var playerY = i+4
 	var player = instance_create_depth(get_x_from_pos(playerX), get_y_from_pos(playerY),0, obj_player)
 	player.posX = playerX
 	player.posY = playerY

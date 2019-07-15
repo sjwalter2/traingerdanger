@@ -703,6 +703,14 @@
             }
         },
         {
+            "Key": "ae414fec-8cf7-46ed-be69-0f8b136396b3",
+            "Value": {
+                "id": "30270010-b4bb-4e53-9ecb-f9b7feeeb54e",
+                "resourcePath": "sounds\\msc_one\\msc_one.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "b21fadd6-25de-4735-82d8-e53329e8ce1f",
             "Value": {
                 "id": "03a77339-ff83-484e-bd04-f44005f0fa53",

@@ -3,4 +3,5 @@
 if(carrying = noone)
 {
 	instance_destroy()	
+	
 }

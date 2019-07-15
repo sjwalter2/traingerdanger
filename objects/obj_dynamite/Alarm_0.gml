@@ -1,5 +1,5 @@
 /// @description Explosion!
-
+audio_play_sound(asset_get_index("snd_explosion" + string(irandom(2))),0,0)
 with(obj_grid){
 	other.grid = self
 }

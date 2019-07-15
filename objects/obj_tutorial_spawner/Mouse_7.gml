@@ -28,7 +28,7 @@
 	strY = get_y_from_pos(5) - 20
 	break;
   case 0: str = "Let's get to work! Left click on a worker to select. Left click to move.";break;
-  case 1: str = "Right click also moves, or performs context-specific events.";break;
+  case 1: str = "Right click also moves, or performs context-specific events. It can also deselect a character if you click outside his range.";break;
   case 2:
  	var railbldg = instance_create_depth(get_x_from_pos(0), get_y_from_pos(4),1,obj_rail_building)
 	 instance_create_depth(get_x_from_pos(0), get_y_from_pos(4),-100,obj_lookatme);
@@ -37,9 +37,9 @@
 	 }
 	railbldg.posX = 0;
 	railbldg.posY = 4;
-	str = "This building produces rails. Move a worker onto a rail piece.";
+	str = "This building produces rails. Move a worker onto the new rail piece.";
 	break;
-  case 3: str = "Now, right click somewhere to place the rail piece.";with(obj_lookatme){instance_destroy()}; break;
+  case 3: str = "Now, right click somewhere to place the rail piece. Placed rails do not flash, and cannot be picked up.";with(obj_lookatme){instance_destroy()}; break;
   case 4: str = "Placing rails next to each other connects them. We need to connect the starting and ending pieces before the train comes!";
 	with(obj_grid_tutorial){
 		 instance_create_depth(get_x_from_pos(0), get_y_from_pos(floor(height/2)),-100,obj_lookatme);  
@@ -100,5 +100,5 @@
  with(obj_text){
 	instance_destroy()	 
  }
- scr_text(str,1,strX,strY);
+ scr_text(str,3,strX,strY);
 incrementer++

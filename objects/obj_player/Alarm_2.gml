@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 mining = 0
+audio_play_sound(snd_mountain,0,0)
 if(ds_map_find_value(mineOnReach, "mountain") = 1)
 				{
 					var mineX = ds_map_find_value(mineOnReach, "posX")

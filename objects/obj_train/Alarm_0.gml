@@ -13,23 +13,27 @@ if(!currentRail.endRail)
 		lastRail = currentRail
 		currentRail = currentRail.rail1	
 	} else {
+		finish = 0
 		with(obj_grid){
-			if(other.posX < width -1)
-			{
-				var dynamite = instance_create_depth(get_x_from_pos(other.posX+1), get_y_from_pos(other.posY),0, obj_dynamite)
-				dynamite.posX = other.posX+1
-				dynamite.posY = other.posY
+
+				var randX = irandom_range(1,width-2)
+				var randY = irandom_range(1,height-2)
+				var dynamite = instance_create_depth(get_x_from_pos(randX), get_y_from_pos(randY),0, obj_dynamite)
+				dynamite.posX = randX
+				dynamite.posY = randY
 				with dynamite{alarm_set(0,10)}
-			}
-			if(other.posX > 0)
-			{
-				dynamite = instance_create_depth(get_x_from_pos(other.posX-1), get_y_from_pos(other.posY),0, obj_dynamite)
-				dynamite.posX = other.posX-1
-				dynamite.posY = other.posY
+				
+				var randX = irandom_range(1,width-2)
+				var randY = irandom_range(1,height-2)
+				var dynamite = instance_create_depth(get_x_from_pos(randX), get_y_from_pos(randY),0, obj_dynamite)
+				dynamite.posX = randX
+				dynamite.posY = randY
 				with dynamite{alarm_set(0,10)}
-			}
+			
 		}
-		instance_destroy()
+		image_alpha =0
+		if(alarm_get(1) = -1)
+			alarm_set(1,500)
 	}
 	x = currentRail.x
 	posX = currentRail.posX
@@ -37,7 +41,10 @@ if(!currentRail.endRail)
 	posY = currentRail.posY
 
 } else {
-	instance_destroy()
+	finish = 1
+	image_alpha =0
+	if(alarm_get(1) = -1)
+		alarm_set(1,500)
 }
 	
 	

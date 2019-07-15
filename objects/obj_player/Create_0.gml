@@ -4,6 +4,7 @@ posX = -1
 posY = -1
 goalX = -1
 goalY = -1
+walk = 0
 placeOnReach = -1
 selected = 0
 carrying = noone

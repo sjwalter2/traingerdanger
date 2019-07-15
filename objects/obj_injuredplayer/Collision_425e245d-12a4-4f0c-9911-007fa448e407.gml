@@ -2,6 +2,7 @@
 
 
 if !beinghealed {
+	audio_play_sound(snd_heal,0,0)
 	beinghealed = 1;
 	image_blend = c_green;
 	alarm_set(0,alarm_max)

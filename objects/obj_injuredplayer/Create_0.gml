@@ -10,3 +10,5 @@ image_xscale = .8
 image_yscale = .8
 event_inherited()
 alarm_set(1,15)
+with(obj_grid)
+	clear_range()

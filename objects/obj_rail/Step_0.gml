@@ -288,4 +288,5 @@ if(placed && !set)
 	set = 1
 	depth = 5
 	check_for_win()
+	audio_play_sound(snd_rail,0,0)
 }

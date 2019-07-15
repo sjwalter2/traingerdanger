@@ -20,7 +20,7 @@ randomize()
 global.gameWon = 0;
 global.gameLost = 0;
 global.Iron = 3;
-global.Gems = 12;
+global.Gems = 0;
 global.maxTime = 36000;
 global.WalkSpeedUpgrade = 0;
 global.MineSpeedUpgrade = 0;
@@ -50,7 +50,7 @@ for (var i = 0; i < width; i++)
 	if(leftMostMountain != width)
 		break;
 }
-for(var i = 0; i < 4;i++)
+for(var i = 0; i < 2;i++)
 {
 	var playerX = irandom(leftMostMountain-1)
 	var playerY = irandom(height-1)
@@ -102,6 +102,7 @@ for(var i = 0; i < 4;i++)
 	startRail.startRail = 1
 	startRail.posX = 0
 	startRail.posY = floor(height/2)
+	
 	
 //	var endRail = instance_create_depth(get_x_from_pos(width-1),get_y_from_pos(floor(height/2)),5,obj_rail)
 	var endRail = instance_create_depth(get_x_from_pos(width-1),get_y_from_pos(floor(height/2)),5,obj_rail)

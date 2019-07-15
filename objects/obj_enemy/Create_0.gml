@@ -12,3 +12,5 @@ if(instance_exists(obj_dynamite))
 	target = instance_nearest(x,y,obj_dynamite)
 else
 	instance_destroy()
+	
+alarm_set(1,20)

@@ -48,6 +48,12 @@ if(myTurn  && !pointReached && actions > 0)
 		var lastPosY = posY
 		posX = pathToTargetX[pathCount]
 		posY = pathToTargetY[pathCount]
+		walk++
+		if(walk = 2)
+		{
+			audio_play_sound(snd_walk,0,0)
+			walk = 0
+		}
 		if(posX < lastPosX)
 		{
 			image_index = 3
@@ -148,6 +154,16 @@ if(myTurn  && !pointReached && actions > 0)
 			
 			pickingUp = 1
 			alarm_set(1,5)
+			var otherSelected =0
+			with(obj_player)
+				if(selected)
+					otherSelected = 1
+			if(!otherSelected)		
+			{
+				with(obj_grid)	
+					clear_range()
+				select_player()
+			}
 		}
 	}
 }

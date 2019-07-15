@@ -8,7 +8,8 @@
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
         "7e943a81-3f77-4d34-b072-990e51a31f65",
-        "d60bd20e-d79e-4f31-a655-7ba3daac5981"
+        "d60bd20e-d79e-4f31-a655-7ba3daac5981",
+        "1c7e3bc1-9f60-446a-bb1b-fe2bc1629899"
     ],
     "IsDnD": false,
     "layers": [
@@ -27,7 +28,8 @@
             "inheritVisibility": false,
             "instances": [
 {"name": "inst_621C8F9F","id": "7e943a81-3f77-4d34-b072-990e51a31f65","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_621C8F9F","objId": "086aa2a5-8961-47d9-880f-4765dd7d37b9","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 800,"y": 672},
-{"name": "inst_591F6A48","id": "d60bd20e-d79e-4f31-a655-7ba3daac5981","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_591F6A48","objId": "9c236906-6a19-4bec-845f-88be75487a17","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 800,"y": 768}
+{"name": "inst_591F6A48","id": "d60bd20e-d79e-4f31-a655-7ba3daac5981","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_591F6A48","objId": "9c236906-6a19-4bec-845f-88be75487a17","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 800,"y": 768},
+{"name": "inst_21ED0246","id": "1c7e3bc1-9f60-446a-bb1b-fe2bc1629899","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_21ED0246","objId": "820cf23a-0b99-4f21-aa5b-ae6030dbb27f","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 0,"y": 32}
             ],
             "layers": [
 

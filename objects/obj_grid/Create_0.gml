@@ -20,7 +20,7 @@ randomize()
 global.gameWon = 0;
 global.gameLost = 0;
 global.Iron = 3;
-global.Gems = 0;
+global.Gems = 12;
 global.maxTime = 30000;
 global.WalkSpeedUpgrade = 0;
 global.MineSpeedUpgrade = 0;
@@ -50,7 +50,7 @@ for (var i = 0; i < width; i++)
 	if(leftMostMountain != width)
 		break;
 }
-for(var i = 0; i < 2;i++)
+for(var i = 0; i < 4;i++)
 {
 	var playerX = irandom(leftMostMountain-1)
 	var playerY = irandom(height-1)

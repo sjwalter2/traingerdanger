@@ -1,8 +1,8 @@
 if global.Gems >= playerCost{
 	with myBuilding {
 		alarm_set(1,player_spawn_rate)
-		global.Gems = global.Gems - playerCost
 	}
+	global.Gems = global.Gems - playerCost
 }
 else {
 	with mytextbox {instance_destroy()}

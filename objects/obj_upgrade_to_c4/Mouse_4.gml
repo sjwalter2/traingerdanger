@@ -2,8 +2,8 @@ if global.Gems >= upgradeCost {
 	myBuilding.upgrade = 1;
 	global.Gems = global.Gems - upgradeCost
 	with mytextbox{instance_destroy()}
-	mytextbox =  scr_text("Dynamite Upgraded!",1,x-200,y-20);
-	with mytextbox{
+	mytextbox1 =  scr_text("Dynamite Upgraded!",1,x-200,y-20);
+	with mytextbox1{
 		alarm_set(1,300)
 	}
 	instance_destroy();

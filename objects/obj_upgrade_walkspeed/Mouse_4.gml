@@ -1,7 +1,7 @@
 if global.Gems >= upgradeCost {
-	myBuilding.upgrade = 1;
+	global.WalkSpeedUpgrade = 1;
 	global.Gems = global.Gems - upgradeCost
-	var textbox =  scr_text("Dynamite Upgraded!",1,x-200,y-20);
+	var textbox =  scr_text("Walk Speed Upgraded!",1,x-200,y-20);
 	with textbox{
 		alarm_set(1,300)
 	}

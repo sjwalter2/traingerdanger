@@ -21,4 +21,4 @@ with (txt){
  boxwidth = text_width + (padding*2);
  boxheight = text_height + (padding*2);
 };
-return txt;
+return txt.id;

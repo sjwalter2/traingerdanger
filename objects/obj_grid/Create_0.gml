@@ -117,6 +117,8 @@ global.gameLost = 0;
 global.Iron = 3;
 global.Gems = 0;
 global.maxTime = 30000;
+global.WalkSpeedUpgrade = 0;
+global.MineSpeedUpgrade = 0;
 
 alarm_set(0,global.maxTime)
 alarm_set(1, irandom_range(1200, 2400))

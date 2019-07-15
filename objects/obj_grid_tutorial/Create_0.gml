@@ -96,3 +96,5 @@ global.Iron = 3;
 global.Gems = 2;
 global.maxTime = 0;
 
+global.WalkSpeedUpgrade = 0;
+global.MineSpeedUpgrade = 0;

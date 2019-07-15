@@ -5,13 +5,43 @@
     "name": "obj_tutorial_button",
     "eventList": [
         {
-            "id": "4fef794f-068d-45fd-99c2-eef2cf0d9810",
+            "id": "2c2f3736-26cd-48bc-a6ff-d8fd005bc7b7",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
+            "enumb": 7,
             "eventtype": 6,
+            "m_owner": "086aa2a5-8961-47d9-880f-4765dd7d37b9"
+        },
+        {
+            "id": "c4ac2710-631d-4ef7-b2c6-ecd6fd6c2ea0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 6,
+            "m_owner": "086aa2a5-8961-47d9-880f-4765dd7d37b9"
+        },
+        {
+            "id": "aa111737-c315-4fb5-b254-ee76e9f48e04",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "086aa2a5-8961-47d9-880f-4765dd7d37b9"
+        },
+        {
+            "id": "2e6abd9d-9736-4145-abc9-f2a781c6f320",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "086aa2a5-8961-47d9-880f-4765dd7d37b9"
         }
     ],

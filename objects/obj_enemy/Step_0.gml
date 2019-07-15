@@ -31,6 +31,8 @@ else if(moveDir = 2)
 else
 {
 	y-= moveSpeed
+	if(y < -32)
+		instance_destroy()
 	if(instance_exists(obj_dynamite))
 		target = instance_nearest(x,y,obj_dynamite)
 }

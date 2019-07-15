@@ -129,11 +129,10 @@ if(myTurn  && !pointReached && actions > 0)
 					with dynamitebldg{
 						if upgrade == 1 {
 							show_debug_message("Already upgraded!")
-						} else if global.Gems >= upgradeCost {
-							upgrade = 1;
-							global.Gems = global.Gems - upgradeCost
-						} else {
-							show_debug_message("Not enough gems!")
+						} else  {
+							var upgradeArrow = instance_create_depth(x - 64,y, -10, obj_upgrade_to_c4)
+							upgradeArrow.myPlayer = other.id;
+							upgradeArrow.myBuilding = id;
 						}
 					}
 				}

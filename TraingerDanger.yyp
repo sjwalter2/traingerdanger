@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0ced2fae-4c7a-424c-bf55-22c3daaa0073",
+            "Value": {
+                "id": "ae037088-622f-446d-85c0-4ffdfbaf4d7b",
+                "resourcePath": "objects\\obj_upgrade_minespeed\\obj_upgrade_minespeed.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "14c7984f-cbb7-4eb1-b781-abcdeb88fad7",
             "Value": {
                 "id": "335b155f-5b6b-4051-950e-c4d8ab05f194",
@@ -428,6 +436,14 @@
                 "id": "d38f2dd2-1f1b-435a-bae0-2ae7d261934d",
                 "resourcePath": "options\\ios\\options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "856eab42-d58b-4597-8d69-7dc0e796c5f8",
+            "Value": {
+                "id": "3a5e5ddc-f2a5-473e-a117-c02ba9d0e071",
+                "resourcePath": "objects\\obj_upgrade_walkspeed\\obj_upgrade_walkspeed.yy",
+                "resourceType": "GMObject"
             }
         },
         {

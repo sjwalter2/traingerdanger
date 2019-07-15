@@ -1,14 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-posX = -1
-posY = -1
-actions = irandom_range(5,10)
-myTurn = 0
-targetSelected = 0
-pathToTargetX = []
-pathToTargetY = []
-pathCount = 1
-moveSpeed = 4
-pointReached = 0
-currentTargetX = -1
-currentTargetY = -1
+target = 0
+moveSpeed = 2
+changeDirection = 1
+moveDir = 0
+carrying = noone
+posX = 0
+posY = 0
+carryingExists = 0
+if(instance_exists(obj_dynamite))
+	target = instance_nearest(x,y,obj_dynamite)
+else
+	instance_destroy()

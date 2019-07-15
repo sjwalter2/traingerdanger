@@ -1,3 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-myTurn = 1
+if(carrying = noone)
+{
+	instance_destroy()	
+}

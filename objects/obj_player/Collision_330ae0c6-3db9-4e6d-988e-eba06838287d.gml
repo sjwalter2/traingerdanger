@@ -7,6 +7,9 @@ var item = other.id
 with(obj_player)
 	if(carrying = item)
 		carried = 1
+with(obj_enemy)
+	if(carrying = item)
+		carried = 1
 if(carrying = noone && !carried)
 {
 	carrying = other

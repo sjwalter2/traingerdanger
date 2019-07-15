@@ -17,6 +17,13 @@ posY
 */
 
 randomize()
+global.gameWon = 0;
+global.gameLost = 0;
+global.Iron = 3;
+global.Gems = 2;
+global.maxTime = 0;
+global.WalkSpeedUpgrade = 0;
+global.MineSpeedUpgrade = 0;
 width = 32
 height = 22
 tileSize = 32
@@ -90,11 +97,4 @@ for(var i = 0; i < 2;i++)
 	ds_map_replace(grid[width-1, floor(height/2)-1], "borderArray", get_bordering(width-1,floor(height/2)-1,grid))
 	ds_map_replace(grid[width-2, floor(height/2)-1], "borderArray", get_bordering(width-2,floor(height/2)-1,grid))
 	ds_map_replace(grid[width-2, floor(height/2)+1], "borderArray", get_bordering(width-2,floor(height/2)+1,grid))
-global.gameWon = 0;
-global.gameLost = 0;
-global.Iron = 3;
-global.Gems = 2;
-global.maxTime = 0;
 
-global.WalkSpeedUpgrade = 0;
-global.MineSpeedUpgrade = 0;

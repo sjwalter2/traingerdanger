@@ -123,6 +123,19 @@ if(myTurn  && !pointReached && actions > 0)
 							show_debug_message("Not enough gems!")
 						}
 					}
+				} else if(instance_position(myX,myY,obj_dynamite_building))
+				{
+					var dynamitebldg = instance_position(myX,myY,obj_dynamite_building)
+					with dynamitebldg{
+						if upgrade == 1 {
+							show_debug_message("Already upgraded!")
+						} else if global.Gems >= upgradeCost {
+							upgrade = 1;
+							global.Gems = global.Gems - upgradeCost
+						} else {
+							show_debug_message("Not enough gems!")
+						}
+					}
 				}
 				purchaseOnReach = -1
 			}

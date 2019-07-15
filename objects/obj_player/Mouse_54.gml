@@ -83,8 +83,8 @@ if(selected)
 		else if(!conflict && selectedPlayer != noone && 
 			(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
 			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
-			ds_map_find_value(grid[hoverX,hoverY],"inRange") = 1 && 
-			instance_position(mx,my,obj_player_building) &&
+			ds_map_find_value(grid[hoverX,hoverY],"inRange") = 1 && (
+			instance_position(mx,my,obj_player_building) || instance_position(mx,my,obj_dynamite_building))&&
 			ds_map_find_value(grid[hoverX, hoverY], "mountain") == 0 ) {
 			var target = find_nearest_border(hoverX,hoverY,grid, 0)
 			selectedPlayer.purchaseOnReach = grid[hoverX,hoverY]

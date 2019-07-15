@@ -119,4 +119,4 @@ global.Gems = 0;
 global.maxTime = 30000;
 
 alarm_set(0,global.maxTime)
-alarm_set(1, irandom_range(1200, 2400))
+alarm_set(1, irandom_range(312  , 324 ))

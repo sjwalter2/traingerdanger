@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 target = 0
-moveSpeed = 1.5
+moveSpeed = 2
 changeDirection = 1
 moveDir = 0
 carrying = noone

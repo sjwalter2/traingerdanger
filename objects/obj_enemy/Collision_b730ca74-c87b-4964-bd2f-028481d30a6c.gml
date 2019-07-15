@@ -18,5 +18,7 @@ if(instance_exists(obj_player))
 	target = instance_nearest(x,y,obj_player)
 else
 	instance_destroy()
-}
+	
 carryingExists = 1
+
+}

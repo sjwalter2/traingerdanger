@@ -4,5 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
-alarm_max = 1500
+alarm_max = 800
 alarm_set(0,alarm_max)

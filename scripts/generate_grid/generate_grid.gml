@@ -14,6 +14,7 @@ for(var i = 0; i < w; i++)
 		var space_map = ds_map_create()
 
 		ds_map_add(space_map, "cost", irandom_range(1,1))
+		ds_map_add(space_map, "color", irandom_range(0,15))
 		ds_map_add(space_map, "hover", 0)
 		ds_map_add(space_map, "ore", 0)
 		ds_map_add(space_map, "occupied", 0)
@@ -23,6 +24,8 @@ for(var i = 0; i < w; i++)
 		ds_map_add(space_map, "pathY", [])
 		ds_map_add(space_map, "posX", i)
 		ds_map_add(space_map, "posY", j)
+		ds_map_add(space_map, "mountain1", 0)
+		
 		grid[i,j] = space_map
 	}
 }
@@ -93,13 +96,41 @@ for(var k = 0; k < iters; k++)
 		}
         chance+=1		
 }
-
+for (var i = 0; i < w; i++)
+		{
+            for (var j = 0; j < h; j++)
+			{
+				if (ds_map_find_value(grid[i,j], "mountain") && irandom(5) = 0)
+				{
+					ds_map_replace(grid[i,j], "mountain1",1)
+				}
+			}
+		}
+for(var k = 0; k < 20; k++)
+{
+        for (var i = 1; i < w-1; i++)
+		{
+            for (var j = 1; j < h-1; j++)
+			{
+                if(irandom(floor(chance/2)) == 0 and ds_map_find_value(grid[i,j], "mountain1") == 1 and ds_map_find_value(grid[i - 1,j], "mountain1") != 1 and ds_map_find_value(grid[i - 1,j], "mountain") == 1) 
+					ds_map_replace(grid[i - 1,j], "mountain1", 1)
+                if(irandom(floor(chance/2)) == 0 and ds_map_find_value(grid[i,j], "mountain1") == 1 and ds_map_find_value(grid[i + 1,j], "mountain1") != 1 and ds_map_find_value(grid[i + 1,j], "mountain") == 1) 
+					ds_map_replace(grid[i + 1,j], "mountain1", 1)
+                if(irandom(chance) == 0 and ds_map_find_value(grid[i,j], "mountain1") == 1 and ds_map_find_value(grid[i, j-1], "mountain1") != 1 and ds_map_find_value(grid[i, j-1], "mountain") == 1)
+					ds_map_replace(grid[i,j - 1], "mountain1", 1)
+                if(irandom(chance) == 0 and ds_map_find_value(grid[i,j], "mountain") == 1 and ds_map_find_value(grid[i, j+1], "mountain1") != 1 and ds_map_find_value(grid[i, j+1], "mountain1") == 1)
+					ds_map_replace(grid[i,j + 1], "mountain1", 1)
+			}
+		}
+        chance+=1		
+}
 //spawn ore and increase mountain cost
 for (var i = 0; i < w; i++)
 		{
             for (var j = 0; j < h; j++)
 			{
 				ds_map_add(grid[i,j], "borderArray", get_bordering(i,j,grid))
+				ds_map_add(grid[i,j], "borderArray1", get_bordering1(i,j,grid))
 				if (ds_map_find_value(grid[i,j], "mountain"))
 				{
 					ds_map_replace(grid[i,j], "cost", 100)	

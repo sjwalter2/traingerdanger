@@ -71,7 +71,10 @@ with grid{
 	expl.posY = other.posY;
 }
 with(obj_player)
+{
 	if(carrying == other.id)
 		carrying = noone
+	
+}
 		
 instance_destroy();

@@ -16,4 +16,6 @@ if(carrying = noone && !carried)
 	carrying.depth = depth - 1
 }
 pickingUp = 0
+if(selected)
+	select_player()
 }

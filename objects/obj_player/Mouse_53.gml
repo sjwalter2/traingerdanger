@@ -31,12 +31,17 @@ if(selected)
 			selectedPlayer.pathToTargetX =  ds_map_find_value(grid[hoverX,hoverY], "pathX")
 			selectedPlayer.pathToTargetY = ds_map_find_value(grid[hoverX,hoverY], "pathY")
 			selectedPlayer.myTurn = 1
+			with(obj_selectable)
+				reselect = 0
+			selectedPlayer.reselect =1
 			clear_range()
 	
 		}
 		else if(!(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
 			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) ||
 			ds_map_find_value(grid[hoverX, hoverY], "inRange") = 0)
-			clear_range()	
+			clear_range()
+			
+		
 	
 	}

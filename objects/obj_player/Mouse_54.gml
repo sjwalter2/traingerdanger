@@ -46,6 +46,9 @@ if(selected)
 			carryingPlayer.pathToTargetX =  ds_map_find_value(target, "pathX")
 			carryingPlayer.pathToTargetY = ds_map_find_value(target, "pathY")
 			carryingPlayer.myTurn = 1
+			with(obj_selectable)
+				reselect = 0
+			carryingPlayer.reselect =1
 			clear_range()
 		}
 		else if(!conflict && selectedPlayer != noone && 
@@ -62,9 +65,12 @@ if(selected)
 			selectedPlayer.pathToTargetX =  ds_map_find_value(grid[hoverX,hoverY], "pathX")
 			selectedPlayer.pathToTargetY = ds_map_find_value(grid[hoverX,hoverY], "pathY")
 			selectedPlayer.myTurn = 1
+			with(obj_selectable)
+				reselect = 0
+			selectedPlayer.reselect =1
 			clear_range()
 		}
-		else if(!conflict && selectedPlayer != noone && 
+		else if(!conflict && selectedPlayer != noone && carryingPlayer != selectedPlayer &&
 			(mx > xx + hoverX*tileSize && mx <= xx + (hoverX+1)*tileSize &&
 			my > yy + hoverY*tileSize && my <= yy +(hoverY+1)*tileSize) && 
 			ds_map_find_value(grid[hoverX,hoverY],"inRange") = 3)
@@ -78,6 +84,9 @@ if(selected)
 			selectedPlayer.pathToTargetX =  ds_map_find_value(target, "pathX")
 			selectedPlayer.pathToTargetY = ds_map_find_value(target, "pathY")
 			selectedPlayer.myTurn = 1
+			with(obj_selectable)
+				reselect = 0
+			selectedPlayer.reselect =1
 			clear_range()
 		}
 		else if(!conflict && selectedPlayer != noone && 
@@ -95,9 +104,13 @@ if(selected)
 			selectedPlayer.pathToTargetX =  ds_map_find_value(target, "pathX")
 			selectedPlayer.pathToTargetY = ds_map_find_value(target, "pathY")
 			selectedPlayer.myTurn = 1
+			with(obj_selectable)
+				reselect = 0
+			selectedPlayer.reselect =1
 			clear_range()
 		}
 		else if (!conflict || ds_map_find_value(grid[hoverX,hoverY],"inRange") == 0)
 			clear_range()	
+			
 	}
 	

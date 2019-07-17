@@ -158,7 +158,7 @@ if(myTurn  && !pointReached && actions > 0)
 			with(obj_player)
 				if(selected)
 					otherSelected = 1
-			if(!otherSelected)		
+			if(reselect && !otherSelected)		
 			{
 				with(obj_grid)	
 					clear_range()

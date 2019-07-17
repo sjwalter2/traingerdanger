@@ -7,6 +7,7 @@ goalY = -1
 walk = 0
 placeOnReach = -1
 selected = 0
+reselect = 0
 carrying = noone
 pathToTargetX = []
 pathToTargetY = []

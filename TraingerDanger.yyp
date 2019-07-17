@@ -623,6 +623,14 @@
             }
         },
         {
+            "Key": "9d4779d2-f7c8-4e97-93b4-4870ac9834e1",
+            "Value": {
+                "id": "b2ad6d4b-3e3b-4beb-8bb9-c692d89382af",
+                "resourcePath": "sprites\\spr_mountain_border\\spr_mountain_border.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9dfde0a5-57ea-4ab9-b811-736143e8c520",
             "Value": {
                 "id": "c49a7351-be00-41b4-baf8-7507923906c2",
@@ -719,6 +727,14 @@
             }
         },
         {
+            "Key": "b2257c48-6e0b-4efd-a1c4-ab1d5602f307",
+            "Value": {
+                "id": "800a6c10-489e-46d0-863a-f319230e87d1",
+                "resourcePath": "sprites\\spr_mountain_border1\\spr_mountain_border1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b3b80253-9b2e-4fae-bb1c-ab240524c2b2",
             "Value": {
                 "id": "95fbaa94-c34b-43cd-bf49-f3e3a279fef9",
@@ -732,6 +748,14 @@
                 "id": "c1a1c202-f228-4f40-b723-781c98dbabdf",
                 "resourcePath": "rooms\\tutorial\\tutorial.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "b532d930-3d8f-41d2-bc4d-ff7fa6ac6b5c",
+            "Value": {
+                "id": "dc99d0fa-34b4-4858-ad79-b0afb815f2b2",
+                "resourcePath": "scripts\\get_bordering1\\get_bordering1.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -836,14 +860,6 @@
                 "id": "71ef66ef-4917-41a1-8320-768083417109",
                 "resourcePath": "objects\\obj_pause_button\\obj_pause_button.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "cf431e9b-23fb-4919-a885-95f0629eb4bf",
-            "Value": {
-                "id": "89f9f1e9-b7d8-4a2a-85c0-d7b8a6a05430",
-                "resourcePath": "sprites\\spr_mountain_border\\spr_mountain_border.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1064,6 +1080,7 @@
         "d7ef308c-b77f-46dd-b432-9fa701be8a56",
         "3bfb513d-c3c1-48bf-b032-d48059aea0bd",
         "ca7d7c6f-d267-4fce-b1f4-8b0ca8dc75d3",
+        "b532d930-3d8f-41d2-bc4d-ff7fa6ac6b5c",
         "78e0b420-8dde-4c44-80a0-64ad6330a7ae",
         "e9ec5c40-0392-41ca-9365-2ac51570fdee",
         "41163e64-5505-42be-abd0-f3a0ed79cefa",
